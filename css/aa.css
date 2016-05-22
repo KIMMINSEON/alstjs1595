@@ -1,0 +1,30 @@
+#t1>div{width: 100%; margin-bottom:39px;}
+        .tit{width: 100%; height: 67px;}
+        .tit>div{width: 100%; height: 16px; margin-top: 14px;}
+            .tit hr{width: 25%; margin-top: 7.5px; color: #40487c;}
+            .tit hr:nth-of-type(1){float: left;}
+            .tit hr:nth-of-type(2){float: right;}
+            .tit h2{width: 50%; height: 16px; font: 800 16px notokr-light; display: block; float:left; line-height: 16px; text-align: center;}
+    #t1>div:nth-of-type(1){height: 186px; background-color: #aa5;}
+        .tit img{margin-left: auto; margin-right: auto; display: block;}
+    #t1>div:nth-of-type(1) .text ul{width: 100%; height: 88px; margin-top: 32px;}
+            .text ul>li{width: 100%; height: 19px; float:left;/* list-style-image:url(../img/list.png);*/}
+            div:nth-of-type(1)>.text ul>li{list-style:none;}
+            .text ul>li:nth-of-type(1),.text ul>li:nth-of-type(2){width: 50%;}
+            .text ul>li:nth-of-type(3),.text ul>li:nth-of-type(4){margin-top: 15px;}
+            .text ul>li>div{width: 19px; height: 19px; float: left;  margin-right: 29px; background-repeat: no-repeat; background-position: center;}
+            .icon1 {background-image: url(../img/icon1.png);}
+            .icon2 {background-image: url(../img/icon2.png);}
+            .icon3 {background-image: url(../img/icon3.png);}
+            .icon4 {background-image: url(../img/icon4.png);}
+            .text ul>li>p{height: 19px; float: left; font: 300 14px notokr-light; line-height:19px; color: #444444;}
+    #t1>div:nth-of-type(2){height: 200px; background-color: #aa5;}
+    #t1>div:nth-of-type(2) .text ul{width: 100%; height: 88px; margin-top: 32px;}
+        #t1>div:nth-of-type(2) ul>li{width: 100%; margin-top: 19px;}
+        #t1>div:nth-of-type(2) ul>li:nth-of-type(1){ margin-top: 0;}
+        #t1>div:nth-of-type(2) ul>li:nth-of-type(2){}
+        #t1>div:nth-of-type(2) ul>li:nth-of-type(3){}
+        #t1>div:nth-of-type(2) ul>li>p{float:left;}
+        #t1>div:nth-of-type(2) ul>li>span{float:left; width: 200px; height: 19px; font: 300 14px notokr-light; line-height:19px; margin-left: 20%;}
+    #t1>div:nth-of-type(3){height: 132px; background-color: #aa5;}
+    #t1>div:nth-of-type(4){height: 150px; background-color: #aa5;}

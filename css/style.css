@@ -1,0 +1,388 @@
+/* 폰트 */
+
+@import url("https://googledrive.com/host/0BxmAw3HA4YGCflRiaUxHOFVCcXVfWmpqeERVZ3AzcDAtM2FRV25XclJDRnVrTVVqamZJcEE/notokr-thin.css");
+@import url("https://googledrive.com/host/0BxmAw3HA4YGCfk5lRk1WVjhQWVRHRldCVEw0TU1qMHhvNEdfM1E0cjZ1Z2ZHRDFfcWRVSDA/notokr-light.css");
+@import url("https://googledrive.com/host/0BxmAw3HA4YGCfnV0d3J5S21BSFdGUXctekQ1eHJoczF2OUcyTGZna3laMlg2MWR6cWoyV1E/notokr-bold.css");
+
+/*.notokr-bold { font-family:notokr-bold !important; }
+.notokr-light { font-family:notokr-light !important; }
+.notokr-thin { font-family:notokr-thin !important; }
+*/
+*{font-family:notokr-light; }
+
+/* style.css */
+
+/* 레이어아웃 */
+section{width: 100%; height: 984px; position: relative;  background-size: cover;}
+
+/* 
+====================================================================
+맨위로
+====================================================================
+*/
+
+#top{width: 50px; height: 50px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.4); position:fixed; bottom:55px; right:55px; z-index: 1000;}
+#top>i{font-size: 30px; color: #fff; text-align: center; line-height: 50px; display: block;}
+
+/* 
+====================================================================
+    header
+====================================================================
+*/
+header{position: fixed; top: 0; transition: top 0.2s ease-in-out; width: 100%; height: 80px; border-bottom:1px solid #40487c; z-index:700; box-sizing: border-box; background-color: #fff;}
+.nav-up {top: -80px;}
+header h1{width: 244px; height: 29px; float:left; margin:26px 0 25px 40px; }
+
+/* 
+====================================================================
+    menu
+====================================================================
+*/
+
+nav{width: 840px; height: 27px; float:right; margin:27px 40px 26px 0; }
+nav>ul{width: 100%; height: 100%;}
+nav>ul li{width: calc(100% / 6); height: 100%; display: block; text-align: center; float: left;}
+nav>ul li>a{width: 100%; height: 100%; line-height:27px; font-weight: 100; font-size: 18px; color: #888; transition:all 1s;}
+nav>ul li>a:hover{color: #333333; font-size: 20px;}
+
+
+
+/* 
+====================================================================
+    home
+====================================================================
+*/
+
+#home {background: url(../img/main_img.png);; background-size: cover;  background-position: right center; background-attachment:fixed; overflow: hidden; background-repeat: no-repeat;}
+#home>dl{width: 302px; height: 296px;  position: absolute; top:50%; left: 50%; margin-top:-148px; margin-left: -151px;}
+#home>dl>dd:nth-of-type(1)>img{margin-left: auto; margin-right: auto; display: block;}
+#home>dl>dd:nth-of-type(2){width: 100%; height: 18px; line-height:18px; font: 100 16px notokr-thin; color: rgba(254, 255, 255, 0.53); text-align: center; margin-top: 42px;}
+#home>dl>dd:nth-of-type(3),#home>dl>dd:nth-of-type(3)>span{width: 100%; height: 22px; line-height: 10px; font: 100 22px notokr-thin; color: #fff;  text-align: center;  margin-top: 28px; letter-spacing:28px;}
+#home>dl>dd:nth-of-type(3)>span{letter-spacing: 0;}
+
+
+/* 
+====================================================================
+    num전체
+====================================================================
+*/
+
+.num{width: 20%; height: 100%; float: left;}
+.numA{width: 100%; height: 466px; margin-top: 45px;}
+.numA>img,.num hr{margin-left: auto; margin-right: auto; display: block;}
+.numA>p{margin-top: 24px; text-align: center; height: 31px; font: 300 40px notokr-light; color: #40487c; line-height: 31px;}
+.numA>img:nth-of-type(2){margin-top: 81px;}
+
+/*선*/
+.fh{height: 70px; width: 100%;}
+.lh{height:calc(100% - 581px); width: 100%;}
+.fh>hr{height: 100%;}
+.lh>hr{height: 100%;}
+
+
+/* 
+====================================================================
+    about
+====================================================================
+*/
+
+#about {background-color:#fff;}
+
+#aboutText {width: 80%; height: 100%; float: left;}
+#t1,#t2{width: 50%; height: 100%; padding:63px 4% 0 4%; box-sizing: border-box; float: left}
+#t2{}
+
+/* ********* about 크기 및 제목타이틀 전체 ****************** */
+
+#t1>div{width: 100%; margin-bottom:39px;}
+    .ab_box{height:186px;}
+    .ab_box .text ul{width: 100%; height: 88px; margin-top: 32px;}
+    .ed_box{height:200px;}
+        .ed_box .text ul{width: 100%; height: 100px; margin-top: 32px;}
+    .wo_box{height:132px;}
+    .aw_box{height:150px;}
+.tit{width: 100%; height: 67px;}
+.tit>div{width: 100%; height: 16px; margin-top: 14px;}
+.tit img{margin-left: auto; margin-right: auto; display: block;}
+    .tit hr{width: 25%; margin-top: 7.5px; color: #40487c;}
+    .tit hr:nth-of-type(1){float: left;}
+    .tit hr:nth-of-type(2){float: right;}
+    .tit h2{width: 50%; height: 16px; font: 800 16px notokr-light; display: block; float:left; line-height: 16px; text-align: center;}
+
+#t2>div{width: 100%; margin-bottom:92px;}
+/*#t1 li,#t2 li{list-style-image:url(../img/list.png);}*/
+
+/* ********* about about me 꾸미기 ****************** */
+
+.ab_box .text ul>li{width: 100%; height: 19px; float:left; /*list-style-image:url(../img/list.png);*/ list-style: none;}
+.ab_box .text ul>li:nth-of-type(1),
+.ab_box .text ul>li:nth-of-type(2){width: 50%;}
+.ab_box .text ul>li:nth-of-type(3),
+.ab_box .text ul>li:nth-of-type(4){margin-top: 15px;}
+.ab_box .text ul>li>div{width: 19px; height: 19px; float: left;  margin-right: 29px; background-repeat: no-repeat; background-position: center;}
+.icon1 {background-image: url(../img/icon1.png);}
+.icon2 {background-image: url(../img/icon2.png);}
+.icon3 {background-image: url(../img/icon3.png);}
+.icon4 {background-image: url(../img/icon4.png);}
+.ab_box .text ul>li>p{height: 19px; float: left; font: 300 14px notokr-light; line-height:19px; color: #444444;}
+
+/* ********* about education 꾸미기 ****************** */
+
+.ed_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
+.ed_box ul>li:nth-of-type(1){ margin-top: 0;}
+.ed_box ul>li>p{width:150px;float:left; font: 300 14px notokr-light;  height: 19px;}
+.ed_box ul>li>span{float:left; width:calc(100% - 150px); height: 19px; font: 300 14px notokr-light; line-height:19px;}
+
+/* ********* about work 꾸미기 ****************** */
+
+.wo_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
+.wo_box ul>li>p{width:25%;float:left; font: 300 14px notokr-light;  height: 19px;}
+.wo_box ul>li>span{float:left; /*width:calc(100% - 25%);*/ height: 19px; font: 300 14px notokr-light; line-height:19px;}
+
+/* ********* about 상장,자격증 꾸미기 ****************** */
+
+.aw_box ul>li,.li_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
+.aw_box ul>li>p,.li_box ul>li>p{width:10%;float:left; font: 300 14px notokr-light;  height: 19px;}
+.aw_box ul>li>span,.li_box ul>li>span{width: 100px; float:left; height: 19px; font: 300 14px notokr-light; line-height:19px; margin-left: 10%;}
+.aw_box ul>li>span:last-child,.li_box ul>li>span:last-child{width: 210px; float:right; margin-right: 4%;}
+
+/* ********* about work 꾸미기 ****************** */
+
+.so_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
+.so_box ul>li>p{width:25%;float:left; font: 300 14px notokr-light;  height: 19px;}
+.so_box ul>li>img{float:right; margin-right: 4%; /*width:calc(100% - 25%);*/}
+
+
+/* 
+====================================================================
+    site1,2_img
+====================================================================
+*/
+
+.siteImgBox{width: 80%; height: 100%; float: left; padding-top: 40px; box-sizing:border-box;}
+.siteImg{width: 100%; height: 100%; background-position: center; background-repeat: no-repeat; background-size:contain;}
+#site1 .siteImg {background-image:url(../img/site01.png);}
+#site2 .siteImg {background-image:url(../img/site02.png);}
+/* 
+====================================================================
+    site1
+====================================================================
+*/
+
+#site1 {background-color: #40487c;}
+
+/* ********* site1_num ****************** */
+
+#site1 .numA>p{color: #fff;}
+#site1 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}
+#site1 .numA>a{color: #fff; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 35px auto 0 auto; font-weight:bold; border: 1px solid  #fff; box-sizing: border-box; transition:all 0.5s;}
+#site1 .numA>a:hover{color: #40487c; background-color: #fff;}
+
+/* 
+====================================================================
+    site2
+====================================================================
+*/
+
+#site2 {background-color:#fff;}
+
+/* 
+====================================================================
+    site2_num
+====================================================================
+*/
+
+#site2 .numA>p{color: #40487c;}
+#site2 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}
+#site2 .numA>a{color: #40487c; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 35px auto 0 auto; font-weight:bold; border: 1px solid  #40487c; box-sizing: border-box; transition:all 0.5s;}
+#site2 .numA>a:hover{color: #fff; background-color: #40487c;}
+
+/* 
+====================================================================
+    work
+====================================================================
+*/
+
+#work {background-color: #40487c;}
+#work p{color: #ffffff;}
+
+.workList{width: 80%; height: 100%; float: left; padding: 70px; box-sizing: border-box;}
+.workList>ul{width: 100%; height: 100%;}
+.workList>ul>li{width: calc((100% - 30px) / 3); height: calc((100% - 30px) / 3); float: left; margin-right: 15px; margin-bottom: 15px;}
+.workList>ul>li:nth-of-type(3),.workList>ul>li:nth-of-type(6),.workList>ul>li:nth-of-type(9){margin-right: 0;}
+.workList>ul a{display: block; overflow: hidden; position: relative; width: 100%; height: 100%;}
+.workList>ul a:hover span{opacity: 0.7}
+.workList>ul img{width: 100%; height: auto;}
+.workList>ul span{width: 100%; height: 100%; background-color: #000;  position: absolute; left: 0; top:0; text-align: center; opacity:0;  transition:all 0.4s; color: #fff; font:800 30px notokr-light;}
+
+/* 
+====================================================================
+    contact
+====================================================================
+*/
+
+#contact {background-color:#fff;}
+
+.contact { width: 80%; height: 100%; float: left;
+}
+
+
+/*
+.contact h5 {width: 100%; height: 37px;
+ font-family: 'Open Sans', 'Nanum Gothic';
+ font: 300 40px NotoSansCJKkr; line-height: 37px; color: #40487c; text-align: center;
+ margin-bottom: 35px;
+}
+.contact .text {
+ font-family: 'Open Sans', 'Nanum Gothic';
+ font-size: 12px;
+ line-height: 1.2;
+ margin-bottom: 40px;
+    text-align: center;
+}
+.contact .form-control {
+ font-family: 'Open Sans', 'Nanum Gothic';
+ width: 100%;
+ line-height:1.4;   
+ background-color: #f2ede9;
+ border-radius: 0;
+ padding:  4px  12px;
+ border-color: #ece1d9;
+ box-shadow: none;
+}
+.contact .form-inline {
+ padding-left: 25%;
+ padding-right: 25%;
+}
+.contact .form-inline .form-group {
+ margin-bottom: 20px;
+ width: 100%;
+}
+.contact .form-inline .form-group.last { margin-bottom: 0px; }
+.contact .btn {
+ font-family: 'Open Sans', 'Nanum Gothic';
+ margin-top: 45px;
+ margin-bottom: 0px;
+ padding: 10px 50px;
+ border: none;
+ border: 0;
+ border-radius: 5px;
+ color: #fff;
+ background-color: #46505d;
+ max-width: 100%;
+ overflow: hidden;
+}
+.contact .btn:hover, .userEL260144 .btn:focus {
+ transition: ease-out 0.7s;
+}
+.contact .form-inline textarea { width: 100%; height: 190px;}
+.contact ::-webkit-input-placeholder { color: #949fab;}
+.contact input:-moz-placeholder { color: #949fab;}
+
+
+@media only screen and (max-width: 767px) {
+ .contact h5 { margin-bottom: 25px;} 
+ .contact .text { margin-bottom: 32px; }
+ .contact .form-inline {  padding-left: 15%;  padding-right: 15%; }
+ .contact .btn {  margin-top: 35px; }
+}
+@media  only screen and (max-width: 480px) {
+ .contact h5 { margin-bottom: 15px;} 
+ .contact .text { margin-bottom: 20px; }
+ .contact .form-inline {  padding-left: 15px;  padding-right: 15px; }
+ .contact .btn {  margin-bottom: 22px; }
+}*/
+
+@media screen and (min-width: 1024px) and (max-width: 1599px){
+
+/* 레이어아웃 */
+    
+#about {height: 1460px;}
+#site1,#site1 {height: 1300px;}
+    
+/* 
+====================================================================
+    num전체
+====================================================================
+*/
+
+.num{width: 100%; height: 416px; padding-top: 60px;}
+.numA{height: 416px; margin-top: 0;}
+.numA>img{margin-left: auto; margin-right: auto; display: block;}
+.numA>p{margin-top: 18px;}
+.numA>img:nth-of-type(2){margin-top: 37px;}
+
+/*선*/
+.fh,.lh{display:none;}
+
+
+
+/* 
+====================================================================
+    about
+====================================================================
+*/
+
+#aboutText {width:100%; height: 984px;}
+#t1,#t2{width: 50%; height: 100%; padding:63px 4% 0 4%; box-sizing: border-box; float: left}
+#t2{}
+
+
+/* 
+====================================================================
+    site1,2 레이어아웃 _img
+====================================================================
+*/
+
+#stie1,#site2{height: 1297px;}   
+    
+.siteImgBox{width: 100%; height: 984px;}
+.siteImg{width: 100%; height: 100%; background-position: center; background-repeat: no-repeat; background-size:contain;}
+#site1 .siteImg {background-image:url(../img/site01.png);}
+#site2 .siteImg {background-image:url(../img/site02.png);}
+/* 
+====================================================================
+    site1
+====================================================================
+*/
+
+#site1 {background-color: #40487c;}
+
+/* ********* site1_num ****************** */
+
+#site1>.num{width: 100%; height: 253px; padding-top: 60px;}
+#site1>.numA{height: 253px; margin-top: 0;}   
+#site1 .numA>p{color: #fff;}
+
+/* 
+====================================================================
+    site2
+====================================================================
+*/
+
+#site2 {background-color:#fff;}
+
+/* 
+====================================================================
+    site2_num
+====================================================================
+*/
+    
+#site2>.num{width: 100%; height: 253px; padding-top: 60px;}
+#site2>.numA{height: 253px; margin-top: 0;}
+
+/* 
+====================================================================
+    work
+====================================================================
+*/
+
+#work{height: 1195px;}
+#work>.num{height: 151px;}
+#work>.numA{height:151px; margin-top: 0;}
+
+.workList{width: 100%; height: 984px;}
+
+}
+
+

@@ -1,13 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
 
-<html>
-  <title>
-    ddddd
-  </title>
-  
-  <body>
-    ddddddddd
-  </body>
-  <style>
-    body{background-color:#ada;}
-  </style>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0," />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_fa.png" />
+    <link rel="apple-touch-icon" href="img/logo_fa.png" />
+    <!-- reset.css 불러오기 -->
+    <link rel="stylesheet" href="css/lib/normalize.css" />
+    <!-- design -->
+    <link rel="stylesheet" href="./font-awesome-4.6.1/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if lte IE 9]>
+	<script src="./js/dist/html5shiv.min.js"></script>
+	<script src="./js/dist/ie9.min.js"></script>
+	<script src="./js/dist/PIE.js"></script>
+	<script src="./js/dist/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <title>MINSEON HOME</title>
+    <style>
+
+    </style>
+    <script>
+        
+    </script>
+</head>
+
+<body>
+    <header class="nav-down">
+        <h1>
+            <a href="index.html"><img src="img/logo.png" alt="로고이미지" /></a>
+        </h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">WEB SITE 01</a></li>
+                <li><a href="#">WEB SITE 02</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- -----------//#menu----------- -->
+    </header>
+    <!-- -----------//header----------- -->
+    <section id="home">
+        <dl>
+            <dt class="hidden">메인화면 로고이미지</dt>
+            <dd><img src="img/logo_big.png" alt="메인화면 로고"></dd>
+            <dd>Web Designer &amp; Publisher</dd>
+            <dd>MINSEO<span>N</span></dd>
+        </dl>
+    </section>
+    <!-- -----------//home----------- -->
+    <section id="about">
+        <div class="num">
+            <div class="fh">
+                <hr width="1" size="70" color="#40487c" />
+            </div>
+            <div class="numA">
+                <img src="img/01.png" alt="a">
+                <p>ABOUT ME</p>
+                <img src="img/pic.png" alt="a">
+            </div>
+            <div class="lh">
+                <hr width="1" size="500" color="#40487c" />
+            </div>
+        </div>
+        <!-- -----------//num----------- -->
+        <div id="aboutText">
+            <div id="t1">
+                <div class="ab_box">
+                    <div class="tit">
+                        <img src="img/aboutIc.png" alt="자기소개아이콘이미지">
+                        <div>
+                            <hr />
+                            <h2>ABOUT ME</h2>
+                            <hr />
+                        </div>
+                    </div>
+                    <!-- -----------//#tit----------- -->
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <div class="icon1"></div>
+                                <p>1993.09.01</p>
+                            </li>
+                            <li>
+                                <div class="icon2"></div>
+                                <p>010-9148-7364</p>
+                            </li>
+                            <li>
+                                <div class="icon3"></div>
+                                <p>minsun019@hanmail.net</p>
+                            </li>
+                            <li>
+                                <div class="icon4"></div>
+                                <p>서울시 동작구 동작동 동작대로 39가길 55</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -----------//.ab_box----------- -->
+                <div class="ed_box">
+                    <div class="tit">
+                        <img src="img/eduIc.png" alt="졸업아이콘이미지">
+                        <div>
+                            <hr />
+                            <h2>EDUCATION</h2>
+                            <hr />
+                        </div>
+                    </div>
+                    <!-- -----------//#tit----------- -->
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <p>2016.02 - 2016.06</p>
+                                <span>그린컴퓨터 아트학원&#91;NCS기반&#93; 웹디자인&#40;퍼블리셔&#41;수료</span>
+                            </li>
+                            <li>
+                                <p>2012.03 - 2014.02</p>
+                                <span>신안산 대학교 졸업</span>
+                            </li>
+                            <li>
+                                <p>2009.03 - 2012.02</p>
+                                <span>동작고등학교 졸업</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -----------//.ed_box----------- -->
+                <div class="wo_box">
+                    <div class="tit">
+                        <img src="img/workIc.png" alt="경력아이콘이미지">
+                        <div>
+                            <hr />
+                            <h2>WORK EXPERIENCES</h2>
+                            <hr />
+                        </div>
+                    </div>
+                    <!-- -----------//#tit----------- -->
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <p>2013.11 - 2015.03</p>
+                                <span>대광OA퍼니처 근무 &#40;상세페이지,배너,팝업창 제작&#41;</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -----------//.wo_box----------- -->
+                <div class="aw_box">
+                    <div class="tit">
+                        <img src="img/awaIc.png" alt="수상아이콘이미지">
+                        <div>
+                            <hr color="#40487c" />
+                            <h2>AWARDS AND HONORS</h2>
+                            <hr color="#40487c" />
+                        </div>
+
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <p>2013.10</p>
+                                <span>서울특별시</span>
+                                <span>올바른 의약품사용 UCC장려상</span>
+                            </li>
+                            <li>
+                                <p>2010.12</p>
+                                <span>한국생산성본부</span>
+                                <span>최우수상&#40;한국생산성본부 회장상&#41;</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -----------//.aw_box----------- -->
+            </div>
+            <!-- -----------//#t1 왼쪽 내용----------- -->
+            <div id="t2">
+                <div class="li_box">
+                    <div class="tit">
+                        <img src="img/liIco.png" alt="자격증아이콘이미지">
+                        <div>
+                            <hr color="#40487c" />
+                            <h2>LICENSE</h2>
+                            <hr color="#40487c" />
+                        </div>
+
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <p>2013.10</p>
+                                <span>Adobe</span>
+                                <span>ACA Adobe Photoshop CS5</span>
+                            </li>
+                            <li>
+                                <p>2012.02</p>
+                                <span>서울지방경찰청장</span>
+                                <span>자동차운전면허증&#40;2종보통&#41;</span>
+                            </li>
+                            <li>
+                                <p>2010.09</p>
+                                <span>한국생산성본부</span>
+                                <span>GTQ포토샵2급</span>
+                            </li>
+                            <li>
+                                <p>2010.09</p>
+                                <span>한국생산성본부</span>
+                                <span>GTQ포토샵2급</span>
+                            </li>
+                            <li>
+                                <p>2010.04</p>
+                                <span>한국생산성본부</span>
+                                <span>ITQ OA Master</span>
+                            </li>
+                            <li>
+                                <p>2010.04</p>
+                                <span>한국생산성본부</span>
+                                <span>정보기술자격&#40;ITQ&#41;한글엑셀A등급</span>
+                            </li>
+                            <li>
+                                <p>2010.03</p>
+                                <span>한국생산성본부</span>
+                                <span>정보기술자격&#40;ITQ&#41;아래한글A등급</span>
+                            </li>
+                            <li>
+                                <p>2010.03</p>
+                                <span>한국생산성본부</span>
+                                <span>정보기술자격&#40;ITQ&#41;파워포인트A등급</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -----------//.li_box----------- -->
+                <div class="so_box">
+                    <div class="tit">
+                        <img src="img/workIc.png" alt="경력아이콘이미지">
+                        <div>
+                            <hr />
+                            <h2>SOFTWARE SKILL</h2>
+                            <hr />
+                        </div>
+                    </div>
+                    <!-- -----------//#tit----------- -->
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <p>PHOTOSHOP</p>
+                                <img src="img/pho_lv.png" alt="">
+                            </li>
+                            <li>
+                                <p>ILLUSTRATOR</p>
+                                <img src="img/il_lv.png" alt="">
+                            </li>
+                            <li>
+                                <p>HTML</p>
+                                <img src="img/html_lv.png" alt="">
+                            </li>
+                            <li>
+                                <p>CSS</p>
+                                <img src="img/cs_lv.png" alt="">
+                            </li>
+                            <li>
+                                <p>SASS</p>
+                                <img src="img/sa_lv.png" alt="">
+                            </li>
+                            <li>
+                                <p>JQUERY/JAVASCRIPT</p>
+                                <img src="img/jq_lv.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -----------//.li_box----------- -->
+            </div>
+            <!-- -----------//#t2 왼쪽 내용----------- -->
+        </div>
+    </section>
+    <!-- -----------//about----------- -->
+    <section id="site1">
+        <div class="num">
+            <div class="fh">
+                <hr width="1" size="70" color="#fff" />
+            </div>
+            <div class="numA">
+                <img src="img/02.png" alt="a">
+                <p>WEB SITE 01</p>
+                <p>카페 파스쿠찌 리뉴얼</p>
+                <a href="#">데모사이트 보기</a>
+            </div>
+            <div class="lh">
+                <hr width="1" size="500" color="#fff" />
+            </div>
+        </div>
+        <!-- -----------//num----------- -->
+        <div class="siteImgBox">
+            <div class="siteImg"></div>
+        </div>
+    </section>
+    <!-- -----------//site1----------- -->
+    <section id="site2">
+        <div class="num">
+            <div class="fh">
+                <hr width="1" size="70" color="#40487c" />
+            </div>
+            <div class="numA">
+                <img src="img/03.png" alt="a">
+                <p>WEB SITE 02</p>
+                <p>어쩌구저쩌구홈페</p>
+                <a href="#">데모사이트 보기</a>
+            </div>
+            <div class="lh">
+                <hr width="1" size="500" color="#40487c" />
+            </div>
+        </div>
+        <!-- -----------//num----------- -->
+        <div class="siteImgBox">
+            <div class="siteImg"></div>
+        </div>
+    </section>
+    <!-- -----------//site2----------- -->
+    <section id="work">
+        <div class="num">
+            <div class="fh">
+                <hr width="1" size="70" color="#fff" />
+            </div>
+            <div class="numA">
+                <img src="img/04.png" alt="a">
+                <p>WORK</p>
+            </div>
+            <div class="lh">
+                <hr width="1" size="500" color="#fff" />
+            </div>
+        </div>
+        <!-- -----------//num----------- -->
+        <div class="workList">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/work_01.png" alt="">
+                        <span>WORK 01</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/work_01.png" alt="">
+                        <span>WORK 02</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/work_01.png" alt="">
+                        <span>WORK 03</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/work_01.png" alt="">
+                        <span>WORK 04</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/work_01.png" alt="">
+                        <span>WORK 05</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/work_01.png" alt="">
+                        <span>WORK 06</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/work_01.png" alt="">
+                        <span>WORK 07</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/work_01.png" alt="">
+                        <span>WORK 08</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/work_01.png" alt="">
+                        <span>WORK 09</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- -----------//work----------- -->
+    <section id="contact">
+        <div class="num">
+            <div class="fh">
+                <hr width="1" color="#40487c" />
+            </div>
+            <div class="numA">
+                <img src="img/05.png" alt="a">
+                <p>CONTACT</p>
+            </div>
+            <div class="lh">
+                <hr width="1" color="#40487c" />
+            </div>
+        </div>
+        <!-- -----------//num----------- -->
+        <div class="contact">
+            <!--<div class="form">
+                <h3>GET IN TOUCH</h3>
+                <div class="text">
+                    Phone : 010 - 9148 - 7364
+                    <br>
+                    <br>Email : rlaalstjs23@naver.com
+                </div>
+                <input type="text" class="form-control" value="" placeholder="Name" id="contact-name" />
+                <label class="input-field-icon icon-user" for="login-name"></label>
+           </div>-->
+            <!--<div class="text-box">
+                <h5 data-edit="true" data-selector="h5">GET IN TOUCH</h5>
+                <div class="text" data-edit="true" data-selector=".text">
+                       Phone : 010 - 9148 - 7364
+                        <br>
+                        <br>Email : rlaalstjs23@naver.com
+                </div>
+                <div class="form-inline" role="form">
+                    <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Name  " data-contact-firstname>
+                    </div>
+                    <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Email Address  " data-contact-email>
+                    </div>
+                    <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Subject " data-contact-subject>
+                    </div>
+                    <div class="form-group last">
+                        <textarea class="form-control" placeholder="Message  " data-contact-message></textarea>
+                        <span class="btn" data-selector=".btn" data-edit='true' data-contact-submit>SEND</span>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    <!-- -----------//.contact----------- -->
+    </section>
+</body>
+
 </html>
