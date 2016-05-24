@@ -8,7 +8,16 @@
 .notokr-light { font-family:notokr-light !important; }
 .notokr-thin { font-family:notokr-thin !important; }
 */
-*{font-family:notokr-light; }
+@font-face {
+    font-family:'notoLight';
+    src:url('../../font/NotoSansCJKkr-Light.otf.eot');
+    src:url('../../font/NotoSansCJKkr-Light.otf.eot')format('eot?') format('eot');
+    src:url('../../font/NotoSansCJKkr-Light.woff')format('woff');
+    src:url('※'),url('../../font/NotoSansCJKkr-Light.otf')format('opentype');
+    
+}
+
+*{font-family:notoLight;}
 
 /* style.css */
 
