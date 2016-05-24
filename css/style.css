@@ -21,8 +21,21 @@ section{width: 100%; height: 984px; position: relative;  background-size: cover;
 ====================================================================
 */
 
-#top{width: 50px; height: 50px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.4); position:fixed; bottom:55px; right:55px; z-index: 1000;}
+#top{width: 50px; height: 50px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.4); position:fixed; bottom:30px; right:30px; z-index: 1000;}
 #top>i{font-size: 30px; color: #fff; text-align: center; line-height: 50px; display: block;}
+
+/* 
+====================================================================
+팝업창
+====================================================================
+*/
+
+#popupBox1{width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); position: fixed; z-index: 100; top: 0; left: 0;}
+.popup{width: 500px; height: 500px; background-color:rgba(255,255,255,0.7); position:absolute; top: 50%; left:50%; margin-left:-250px; margin-top:-250px;}
+.popup>button{width:30px; height:30px; background-color:#333; position: absolute; top: -15px; right: -15px; cursor: pointer; z-index: 100;}
+.popup>button>i{font-size: 20px; color:#fff; }
+.popup>button>span{width: 0; height: 0; display: block; overflow: hidden;}
+.contentPopup{width: 100%; height: 100%;}
 
 /* 
 ====================================================================
@@ -30,6 +43,8 @@ section{width: 100%; height: 984px; position: relative;  background-size: cover;
 ====================================================================
 */
 header{position: fixed; top: 0; transition: top 0.2s ease-in-out; width: 100%; height: 80px; border-bottom:1px solid #40487c; z-index:700; box-sizing: border-box; background-color: #fff;}
+header>dl a{position:absolute; left:-9999px;}
+header>dl a:focus{left:0; top:0; width:100%; height:30px; text-align:center; color:#ffffff; background:#40487c; font-size:16px; line-height:30px;}
 .nav-up {top: -80px;}
 header h1{width: 244px; height: 29px; float:left; margin:26px 0 25px 40px; }
 
@@ -142,9 +157,9 @@ nav>ul li>a:hover{color: #333333; font-size: 20px;}
 /* ********* about 상장,자격증 꾸미기 ****************** */
 
 .aw_box ul>li,.li_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
-.aw_box ul>li>p,.li_box ul>li>p{width:10%;float:left; font: 300 14px notokr-light;  height: 19px;}
-.aw_box ul>li>span,.li_box ul>li>span{width: 100px; float:left; height: 19px; font: 300 14px notokr-light; line-height:19px; margin-left: 10%;}
-.aw_box ul>li>span:last-child,.li_box ul>li>span:last-child{width: 210px; float:right; margin-right: 4%;}
+.aw_box ul>li>p,.li_box ul>li>p{width:15%;float:left; font: 300 14px notokr-light;  height: 19px;}
+.aw_box ul>li>span,.li_box ul>li>span{width: 20%; float:left; height: 19px; font: 300 14px notokr-light; line-height:19px; margin-left: 7%;}
+.aw_box ul>li>span:last-child,.li_box ul>li>span:last-child{width: 40%; float:right; margin-right: 4%;}
 
 /* ********* about work 꾸미기 ****************** */
 
@@ -213,7 +228,7 @@ nav>ul li>a:hover{color: #333333; font-size: 20px;}
 .workList>ul a{display: block; overflow: hidden; position: relative; width: 100%; height: 100%;}
 .workList>ul a:hover span{opacity: 0.7}
 .workList>ul img{width: 100%; height: auto;}
-.workList>ul span{width: 100%; height: 100%; background-color: #000;  position: absolute; left: 0; top:0; text-align: center; opacity:0;  transition:all 0.4s; color: #fff; font:800 30px notokr-light;}
+.workList>ul span{width: 100%; height: 100%; background-color: #000;  position: absolute; left: 0; top:0; text-align: center; opacity:0;  transition:all 0.4s; color: #fff; font:800 30px notokr-light; line-height:271.3333px; }
 
 /* 
 ====================================================================
@@ -293,7 +308,105 @@ nav>ul li>a:hover{color: #333333; font-size: 20px;}
  .contact .btn {  margin-bottom: 22px; }
 }*/
 
-@media screen and (min-width: 1024px) and (max-width: 1599px){
+/* 
+====================================================================
+   1279px - 1024px
+====================================================================
+*/
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+
+/* 레이어아웃 */
+    
+#about {height: 1460px;}
+#site1,#site1 {height: 1300px;}
+    
+/* 
+====================================================================
+    num전체
+====================================================================
+*/
+
+.num{width: 100%; height: 416px; padding-top: 60px;}
+.numA{height: 416px; margin-top: 0;}
+.numA>img{margin-left: auto; margin-right: auto; display: block;}
+.numA>p{margin-top: 18px;}
+.numA>img:nth-of-type(2){margin-top: 37px;}
+
+/*선*/
+.fh,.lh{display:none;}
+
+
+
+/* 
+====================================================================
+    about
+====================================================================
+*/
+
+#aboutText {width:100%; height: 984px;}
+#t1,#t2{width: 50%; height: 100%; padding:63px 4% 0 4%; box-sizing: border-box; float: left}
+#t2{}
+
+
+/* 
+====================================================================
+    site1,2 레이어아웃 _img
+====================================================================
+*/
+
+#stie1,#site2{height: 1297px;}   
+    
+.siteImgBox{width: 100%; height: 984px;}
+.siteImg{width: 100%; height: 100%; background-position: center; background-repeat: no-repeat; background-size:contain;}
+#site1 .siteImg {background-image:url(../img/site01.png);}
+#site2 .siteImg {background-image:url(../img/site02.png);}
+/* 
+====================================================================
+    site1
+====================================================================
+*/
+
+#site1 {background-color: #40487c;}
+
+/* ********* site1_num ****************** */
+
+#site1>.num{width: 100%; height: 253px; padding-top: 60px;}
+#site1>.numA{height: 253px; margin-top: 0;}   
+#site1 .numA>p{color: #fff;}
+
+/* 
+====================================================================
+    site2
+====================================================================
+*/
+
+#site2 {background-color:#fff;}
+
+/* 
+====================================================================
+    site2_num
+====================================================================
+*/
+    
+#site2>.num{width: 100%; height: 253px; padding-top: 60px;}
+#site2>.numA{height: 253px; margin-top: 0;}
+
+/* 
+====================================================================
+    work
+====================================================================
+*/
+
+#work{height: 1195px;}
+#work>.num{height: 151px;}
+#work>.numA{height:151px; margin-top: 0;}
+
+.workList{width: 100%; height: 984px;}
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px){
 
 /* 레이어아웃 */
     

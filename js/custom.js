@@ -1,4 +1,46 @@
 $(function () {
+    
+   $(window).scroll(function () {
+        if ($(this).scrollTop() >= 50) {
+            $('#top').fadeIn("fast");
+        } else {
+            $('#top').fadeOut("fast");
+        }
+    });
+    $('#top').click(function () { 
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    
+      $("#popupBox1").hide();  
+      
+      var popup = $("#popupBox1");
+      
+      $(".close").on("click", function(){
+        popup.fadeOut();
+      });
+      
+      $(".close2").on("click", function(){
+        $(this).parent().slideUp();
+      });
+      
+     var galleryLink = $(".gallery").find("a"),
+         imgBox = $(".contentPopup");
+      
+      imgBox.css("overflow", "hidden")
+            .html("<img>")
+            .find("img")
+            .width(100 + "%")
+            .attr("src","img/gallery/j02_big.jpg");
+      
+      galleryLink.on("click", function(e){
+        e.preventDefault();
+        var $this = $(this),
+            dataBig = $this.find("img").attr("data-big");
+        popup.fadeIn();
+        imgBox.find("img").attr("src", dataBig);
+      });
 
     // 스크롤 올리고 내릴때 보이게 안보이게
     var didScroll;
