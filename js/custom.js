@@ -1,5 +1,6 @@
 $(function () {
     
+   // 맨위로 가기 
    $(window).scroll(function () {
         if ($(this).scrollTop() >= 50) {
             $('#top').fadeIn("fast");
@@ -12,6 +13,8 @@ $(function () {
             scrollTop: 0
         }, 1000);
     });
+    
+    // 팝업창
     
       $("#popupBox1").hide();  
       
@@ -62,17 +65,14 @@ $(function () {
     function hasScrolled() {
         var st = $(this).scrollTop();
 
-        // Make sure they scroll more than delta
         if (Math.abs(lastScrollTop - st) <= delta)
             return;
 
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight) {
             // Scroll Down
-            $('header').removeClass('nav-down').addClass('nav-up');
+            $('header,#tigger').removeClass('nav-down').addClass('nav-up');
         } else {
-            // Scroll Up
+            
             if (st + $(window).height() < $(document).height()) {
                 $('header').removeClass('nav-up').addClass('nav-down');
             }
@@ -81,47 +81,30 @@ $(function () {
         lastScrollTop = st;
     }
 
+    // 모바일 메뉴
+    
+    var trigger = $('#trigger');
+    var menu = $('nav ul');
+	$(trigger).on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass("on");
+        menu.slideToggle();
+    });
+    $(window).resize(function () {
+        var w = $(window).width();
+        if (w > 1280 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+        }
+    });
+    
     // 변수 높이값 지정
-//    var ht = $(window).height();
-//    // 브라우저 높이값을 section의 높으값으로
-//    $("section").height(ht);
     
-//     var ht = $("section").height();
-//    $("section").height(ht);
-
-//    $(window).on('resize', function () {
-//        var ht = $(window).height();
-//        $("section").height(ht);
-//    });
+    $("#menu a").click(function(e){
+		var posY = $($(this).attr("href")).position();		
+		$("html,body").stop().animate({'scrollTop':posY.top},1000);
+		e.preventDefault();
+	}); 
     
-//    $(window).on('resize', function () {
-//        var ht = $("section").height();
-//        $("section").height(ht);
-//    });
-
-    // 메뉴버튼클릭
-
-//    $("#menu>ul>li").on('click', function (e) {
-//        e.preventDefault()
-//
-//        var ht = $(window).height();
-//        var i = $(this).index();
-//        var nowTop = i * ht;
-//        $("html,body").stop().animate({
-//            "scrollTop": nowTop
-//        }, 1000);
-//    });
-    
-//    $("#menu>ul>li").on('click', function (e) {
-//        e.preventDefault()
-//
-//        var ht = $("section").height();
-//        var i = $(this).index();
-//        var nowTop = i * ht;
-//        $("html,body").stop().animate({
-//            "scrollTop": nowTop
-//        }, 1000);
-//    });
     
     // 마우스 휠 움직일때
 
@@ -140,13 +123,5 @@ $(function () {
         }
     });
     
-    // 이미지 마우스 올렸을때
-    
-    /*var this = $(this);
-    
-    $(".workList>ul>li>a").on("mouseover",function(){
-        $(this).find("span").slideDown(500);
-        $(this).find("span").not().hide();
-    });*/
     
 });

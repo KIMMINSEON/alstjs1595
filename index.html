@@ -57,14 +57,21 @@
         </h1>
         <nav id="menu">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">WEB SITE 01</a></li>
-                <li><a href="#">WEB SITE 02</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#site1">WEB SITE 01</a></li>
+                <li><a href="#site2">WEB SITE 02</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
+        <a href="#" id="trigger" >
+            <span class="hidden">menu</span>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </a>
+        
         <!-- -----------//#menu----------- -->
     </header>
     <!-- -----------//header----------- -->
@@ -433,41 +440,34 @@
                 <hr width="1" color="#40487c" />
             </div>
         </div>
-        <!-- -----------//num----------- -->
         <div class="contact">
-            <!--<div class="form">
+            <div class="contactBox">
                 <h3>GET IN TOUCH</h3>
                 <div class="text">
                     Phone : 010 - 9148 - 7364
                     <br>
                     <br>Email : rlaalstjs23@naver.com
                 </div>
-                <input type="text" class="form-control" value="" placeholder="Name" id="contact-name" />
-                <label class="input-field-icon icon-user" for="login-name"></label>
-           </div>-->
-            <!--<div class="text-box">
-                <h5 data-edit="true" data-selector="h5">GET IN TOUCH</h5>
-                <div class="text" data-edit="true" data-selector=".text">
-                       Phone : 010 - 9148 - 7364
-                        <br>
-                        <br>Email : rlaalstjs23@naver.com
-                </div>
-                <div class="form-inline" role="form">
-                    <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Name  " data-contact-firstname>
-                    </div>
-                    <div class="form-group">
-                            <input class="form-control" type="email" placeholder="Email Address  " data-contact-email>
-                    </div>
-                    <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Subject " data-contact-subject>
-                    </div>
-                    <div class="form-group last">
-                        <textarea class="form-control" placeholder="Message  " data-contact-message></textarea>
-                        <span class="btn" data-selector=".btn" data-edit='true' data-contact-submit>SEND</span>
-                    </div>
-                </div>
-            </div>-->
+                <form action="?" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" value="" />
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" value="" />
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" cols="42" rows="9"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Submit">
+                        </li>
+                    </ul>
+                </form>   
+            </div>  
         </div>
     <!-- -----------//.contact----------- -->
     </section>
