@@ -26,30 +26,6 @@ section{width: 100%; height: 984px; background-size: cover;}
 .popup>button>span{width: 0; height: 0; display: block; overflow: hidden;}
 .contentPopup{width: 100%; height: 100%;}
 
-/* 
-====================================================================
-    header
-====================================================================
-*/
-header{position: fixed; top: 0; transition: top 0.2s ease-in-out; width: 100%; height: 80px; border-bottom:1px solid #40487c; z-index:700; box-sizing: border-box; background-color: #fff;}
-header>dl a{position:absolute; left:-9999px;}
-header>dl a:focus{left:0; top:0; width:100%; height:30px; text-align:center; color:#ffffff; background:#40487c; font-size:16px; line-height:30px;}
-.nav-up {top: -80px;}
-header h1{width: 244px; height: 29px; float:left; margin:26px 0 25px 40px; }
-
-/* 
-====================================================================
-    menu
-====================================================================
-*/
-
-nav{width: 840px; height: 27px; float:right; margin:27px 40px 26px 0; }
-nav>ul{width: 100%; height: 100%;}
-nav>ul li{width: calc(100% / 6); height: 100%; display: block; text-align: center; float: left;}
-nav>ul li>a{width: 100%; height: 100%; display:block; line-height:27px; font-weight: 100; font-size: 18px; color: #888; transition:all 1s;}
-nav>ul li>a:hover{color: #333333; font-size: 20px;}
-#trigger{display:block;}
-
 
 /* 
 ====================================================================

@@ -1,11 +1,11 @@
 /* 
 ====================================================================
-   959px - 768px
+   480px - 767px
 ====================================================================
 */
 
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 480px) and (max-width: 767px){
 
 /* 
 ====================================================================
@@ -13,9 +13,10 @@
 ====================================================================
 */
 
-#home {width: 100%; height: 730px; background: url(../img/main_img.png);; background-size: cover;  background-position: right center; background-attachment:fixed; overflow: hidden; background-repeat: no-repeat; position:relative;}
+#home {width: 100%; height: 600px; background: url(../img/main_img.png);; background-size: cover;  background-position: right center; background-attachment:fixed; overflow: hidden; background-repeat: no-repeat; position:relative;}
 #home>dl{width: 302px; height: 296px;  position: absolute; top:50%; left: 50%; margin-top:-148px; margin-left: -151px;}
-#home>dl>dd:nth-of-type(1)>img{margin-left: auto; margin-right: auto; display: block;}
+    #home>dl>dd:nth-of-type(1){width: 160px; margin: 0 auto;}
+#home>dl>dd:nth-of-type(1)>img{width: 100%; height: auto; margin-left: auto; margin-right: auto; display: block;}
 #home>dl>dd:nth-of-type(2){width: 100%; height: 18px; line-height:18px; font: 100 16px notokr-thin; color: rgba(254, 255, 255, 0.53); text-align: center; margin-top: 42px;}
 #home>dl>dd:nth-of-type(3),#home>dl>dd:nth-of-type(3)>span{width: 100%; height: 22px; line-height: 10px; font: 100 22px notokr-thin; color: #fff;  text-align: center;  margin-top: 28px; letter-spacing:28px;}
 #home>dl>dd:nth-of-type(3)>span{letter-spacing: 0;}
@@ -93,7 +94,7 @@
 
 .wo_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
 .wo_box ul>li>p{width:25%;float:left; font: 300 14px notokr-light;  height: 19px;}
-.wo_box ul>li>span{float:left; /*width:calc(100% - 25%);*/ height: 19px; font: 300 14px notokr-light; line-height:19px;}
+.wo_box ul>li>span{float:right; /*width:calc(100% - 25%);*/ height: 19px; font: 300 14px notokr-light; line-height:19px;}
 
 /* ********* about 상장,자격증 꾸미기 ****************** */
 
@@ -125,15 +126,16 @@
 ====================================================================
 */
 
-#site1 {height: 936px; background-color: #40487c;}
+#site1 {height: 630px; background-color: #40487c;}
 
 /* ********* site1_num ****************** */
 
 #site1 .num{width: 100%; height: 253px; padding-top: 60px;}
 #site1 .numA{height: 253px; margin-top: 0;}  
-#site1 .numA>p{color: #fff;}
-#site1 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}
-#site1 .numA>a{color: #fff; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 35px auto 0 auto; font-weight:bold; border: 1px solid  #fff; box-sizing: border-box; transition:all 0.5s;}
+#site1 .numA>img{}  
+#site1 .numA>p{color: #fff; font: 300 30px notokr-light; line-height: 30px;}
+#site1 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 16px notokr-light;  line-height: 18px;}
+#site1 .numA>a{color: #fff; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 20px auto 0 auto; font-weight:bold; border: 1px solid  #fff; box-sizing: border-box; transition:all 0.5s;}
 #site1 .numA>a:hover{color: #40487c; background-color: #fff;}
 
 /* 
@@ -142,7 +144,7 @@
 ====================================================================
 */
 
-#site2 {height: 936px; background-color:#fff;}
+#site2 {height: 630px; background-color:#fff;}
 
 /* 
 ====================================================================
@@ -168,7 +170,7 @@
 #work .numA{height:151px; margin-top: 0;}
 #work p{color: #ffffff;}
 
-.workList{width: 100%; height: 725px; padding: 70px; box-sizing: border-box;}
+.workList{width: 100%; height: 725px; padding: 70px 10px 30px 10px; box-sizing: border-box;}
 .workList>ul{width: 100%; height: 100%;}
 .workList>ul>li{width: calc((100% - 30px) / 3); height: calc((100% - 30px) / 3); float: left; margin-right: 15px; margin-bottom: 15px;}
 .workList>ul>li:nth-of-type(3),.workList>ul>li:nth-of-type(6),.workList>ul>li:nth-of-type(9){margin-right: 0;}
@@ -187,12 +189,12 @@
 #contact>.num{height: 151px;}
 #contact>.numA{height:151px; margin-top: 0;}
 
-.contact {width: 100%; height: 625px;}
+.contact {width: 100%; height: 625px; padding: 10px; box-sizing: border-box;}
 
-.contactBox{width: 600px; margin: 100px auto 0;}
+.contactBox{width: 100%; margin: 60px auto 0;}
 
 .contact h3{display:none;}
-.contact .text{width: 100%; margin: 34px 0 80px; font-size: 14px; color: #636363; text-align: center;} 
+.contact .text{width: 100%; margin: 20px 0 80px; font-size: 14px; color: #636363; text-align: center;} 
 .contact form{width: 100%;}
 .contact label{display:none;}
 .contact li{width:100%; margin-top:20px;}
