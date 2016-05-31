@@ -63,12 +63,12 @@
     .wo_box{height:148px;}
     .aw_box{height:192px; margin-bottom:0px;}
 .tit{width: 100%; height: 67px;}
-.tit>div{width: 100%; height: 16px; margin-top: 14px;}
+.tit>div{width: 100%; height: 18px; margin-top: 14px;}
 .tit img{margin-left: auto; margin-right: auto; display: block;}
     .tit hr{width: 10%; margin-top: 7.5px; color: #40487c;}
     .tit hr:nth-of-type(1){float: left;}
     .tit hr:nth-of-type(2){float: right;}
-    .tit h2{width: 80%; height: 16px; font: 800 16px notokr-light; display: block; float:left; line-height: 16px; text-align: center;}
+    .tit h2{width: 80%; height: 18px; font: 800 16px notokr-light; display: block; float:left; line-height: 18px; text-align: center;}
 
 #t2>div{width: 100%; margin-bottom:42px;}
     .li_box{height:583px;}
