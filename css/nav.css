@@ -8,6 +8,7 @@ header>dl a{position:absolute; left:-9999px;}
 header>dl a:focus{left:0; top:0; width:100%; height:30px; text-align:center; color:#ffffff; background:#40487c; font-size:16px; line-height:30px;}
 .nav-up {top: -80px;}
 header h1{width: 244px; height: 29px; float:left; margin:26px 0 25px 40px; }
+header h1 span{width: 244px; height: 29px; background-image: url("../img/logo.png"); font-size: 0; background-repeat: no-repeat;}
 
 /* 
 ====================================================================
@@ -40,11 +41,32 @@ nav>ul li>a:hover{background-color: #fff; color: #40487c; font-size: 16px;}
     
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 480px) and (max-width: 767px){
     
 header{height: 50px;}
-header h1{width:200px; height: 24px; float:left; margin:13px 0 13px 13px; }
+header h1{width:200px; height: 29px; float:left; margin:10.5px 0 10.5px 13px; }
     header h1 img{width: 200px; height: auto;}
+    
+nav{width:100%; height:auto; margin:0;}
+nav>ul{width: 100%; height: 100%; display:none;}
+nav>ul li{width:100%; height: 34px; display: block; background-color: #40487c; border-bottom: 1px solid  #777B98; box-sizing:border-box;}
+nav>ul li>a{transition:all 0.2s; font-size: 16px; color: #fff;}
+nav>ul li>a:hover{background-color: #fff; color: #40487c; font-size: 16px;} 
+    
+#trigger{display:block; width: 30px; height: 20px; float: right; position: absolute; top: 15px; right: 13px; cursor: pointer;}
+#trigger.on .one {transform: rotate(45deg) translate(4px, 7px);}
+#trigger.on .two {opacity: 0;}
+#trigger.on .three {transform: rotate(-45deg) translate(4px, -7px);}
+.one,.two,.three {width: 100%; height: 4px; background: white; margin-top:4px; backface-visibility: hidden; transition-duration: 0.3s; background-color: #40487c;}
+.one{margin-top: 0;}
+    
+}
+
+@media screen and (max-width: 479px){
+    
+header{height: 50px;}
+header h1{width:200px; height: 29px; float:left; margin:10.5px 0 10.5px 13px; }
+header h1 span{width: 34px; height: 29px; background-image: url("../img/logo.png"); font-size: 0; background-repeat: no-repeat;}
     
 nav{width:100%; height:auto; margin:0;}
 nav>ul{width: 100%; height: 100%; display:none;}

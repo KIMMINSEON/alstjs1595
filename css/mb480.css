@@ -156,7 +156,7 @@
 #site2 .numA{height: 253px; margin-top: 0;}
 #site2 .numA>p{color: #40487c;}
 #site2 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}
-#site2 .numA>a{color: #40487c; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 35px auto 0 auto; font-weight:bold; border: 1px solid  #40487c; box-sizing: border-box; transition:all 0.5s;}
+#site2 .numA>a{color: #40487c; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 20px auto 0 auto; font-weight:bold; border: 1px solid  #40487c; box-sizing: border-box; transition:all 0.5s;}
 #site2 .numA>a:hover{color: #fff; background-color: #40487c;}
 
 /* 
