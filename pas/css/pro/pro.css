@@ -42,7 +42,7 @@ footer{width: 100%; height: 170px; background-color: #333;}
 
 /* 메뉴리스트 꾸미기 */
 
-#menuList>li{width:calc(100% / 6); height: 100%; display: block; float:left; border-right: 1px solid  #ddd; box-sizing: border-box;}
+#menuList>li{width:16.6667%; height: 100%; display: block; float:left; border-right: 1px solid  #ddd; box-sizing: border-box;}
 #menuList>li:last-child{border-right: 0;}
 #menuList>li>a{width: 100%; height: 100%; display: block; text-align: center; line-height: 38px; color: #333333;}
 #menuList>li:first-child>a{background-color: #e21c39; color: #fff;}
