@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0," />
+    <link rel="shortcut icon" type="image/x-icon" href="img/index/logo.png" />
+    <link rel="apple-touch-icon" href="img/index/logo.png" />
+    <!--reset-->
+    <link rel="stylesheet" href="css/lib/normalize.css" />
+    <!--design-->
+    <link rel="stylesheet" href="./font-awesome-4.6.1/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/brn_st/brn.css" />
+    
+    <script src="js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    
+    
+    <!--[if lte IE 9]>
+	<script src="./js/dist/html5shiv.min.js"></script>
+	<script src="./js/dist/ie9.min.js"></script>
+	<script src="./js/dist/PIE.js"></script>
+	<script src="./js/dist/respond.min.js"></script>
+    <![endif]-->
+    <title>caffe pascucci</title>
+    <style></style>
+    <script>
+    $(function(){
+	    /* -------- pc menu -------- */
+            
+            $(".top_menu").on("mouseenter", function() {
+                 $(".sub_menu").stop().animate({height: 280}, 700);
+            });
+            $(".sub_menu").on("mouseleave", function() {
+                $(this).stop().animate({height: 0}, 700);
+            }); 
+      });	
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header id="headBox">
+            <dl>
+		        <dt class="hidden">바로가기 메뉴</dt>
+		        <dd><a href="#">본문 바로가기</a></dd>
+		        <dd><a href="#nav">주 메뉴 바로가기</a></dd>
+	        </dl>
+	        <div>
+                <h1><a href="index.html">pascucci 로고 이미지</a></h1>
+                <dl id="lnb">
+			        <dt class="hidden">유틸메뉴</dt>
+			        <dd><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>LOGIN</a></dd>
+			        <dd><a href="#"><i class="fa fa-star" aria-hidden="true"></i>JOIN</a></dd>
+		        </dl>
+            </div>
+            <nav id="nav">
+                <h1 class="hidden">메인메뉴</h1>
+                <div class="top_menu">
+                    <ul>
+                        <li><a href="story.html">STORY</a></li>
+                        <li><a href="pro.html">PRODUCTS</a></li>
+                        <li><a href="#">FRANCHISE</a></li>
+                        <li><a href="#">EVENT</a></li>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">CUSTOMER</a></li>
+                    </ul>
+                </div>
+                <div class="sub_menu">
+                    <div class="sub_menu_box">
+                        <dl>
+                            <dt><a href="#">STORY</a></dt>
+                            <dd><a href="story.html">브랜드스토리</a></dd>
+                            <dd><a href="story.html">커피스토리</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">PRODUCTS</a></dt>
+                            <dd><a href="pro.html">Coffee</a></dd>
+                            <dd><a href="pro.html">Beverage</a></dd>
+                            <dd><a href="pro.html">Food</a></dd>
+                            <dd><a href="pro.html">Gelato</a></dd>
+                            <dd><a href="pro.html">MD</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">FRANCHISE</a></dt>
+                            <dd><a href="#">CAFFE PASCUCCI</a></dd>
+                            <dd><a href="#">가맹개설 안내</a></dd>
+                            <dd><a href="#">추천점포</a></dd>
+                            <dd><a href="#">정보공개서</a></dd>
+                            <dd><a href="#">가맹설명회 안내</a></dd>
+                            <dd><a href="#">FAQ/가맹점문의</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">EVENT</a></dt>
+                            <dd><a href="#">진행 중 이벤트</a></dd>
+                            <dd><a href="#">당첨자 발표</a></dd>
+                            <dd><a href="#">종료 이벤트</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">STORE</a></dt>
+                            <dd><a href="#">매장안내</a></dd>
+                            <dd><a href="#">매장소식</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">CUSTOMER</a></dt>
+                            <dd><a href="#">자주하는 질문</a></dd>
+                            <dd><a href="#">제휴혜택</a></dd>
+                            <dd><a href="#">1:1 문의하기</a></dd>
+                            <dd><a href="#">공지사항</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </nav>
+            <div id="mb_menu">
+                <ul id="mb_menu_box">
+                    <li>
+                        <a href="#">STORY</a>
+                        <ul class="sub_st">
+                            <li><a href="#">브랜드스토리</a></li>
+                            <li><a href="#">커피스토리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCTS</a>
+                        <ul class="sub_pr">
+                            <li><a href="#">Coffee</a></li>
+                            <li><a href="#">Beverage</a></li>
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Gelato</a></li>
+                            <li><a href="#">MD</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">FRANCHISE</a>
+                        <ul class="sub_fr">
+                            <li><a href="#">CAFFE PASCUCCI</a></li>
+                            <li><a href="#">가맹개설 안내</a></li>
+                            <li><a href="#">추천점포</a></li>
+                            <li><a href="#">정보공개서</a></li>
+                            <li><a href="#">가맹설명회 안내</a></li>
+                            <li><a href="#">FAQ/가맹점문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">EVENT</a>
+                        <ul class="sub_ev">
+                            <li><a href="#">진행 중 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                            <li><a href="#">종료 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">STORE</a>
+                        <ul class="sub_sto">
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">매장소식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">CUSTOMER</a>
+                        <ul class="sub_cu">
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">제휴혜택</a></li>
+                            <li><a href="#">1:1 문의하기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#" id="trigger" >
+                    <span class="hidden">menu</span>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </a>
+            </div>
+        </header>
+        <!-- ----------------//#header---------------- -->
+        <div id="imgBox">
+            <dl>
+                <dt class="hidden">브랜드 스토리제목</dt>
+                <dd>STORY</dd>
+                <dd><span class="hidden">라인</span></dd>
+                <dd>COFFEE PASCUCCI</dd>
+            </dl>
+        </div>
+        <main>
+           <!-- ----------------//imgBox---------------- -->
+           <div id="textBox">
+               <ul>
+                   <li><a href="#">Brand Story</a></li>
+                   <li><a href="#">Coffee Story</a></li>
+               </ul>
+               <div class="box01">
+                   <ul>
+                       <li><span>커피원두사진</span></li>
+                       <li>
+                           <dl>
+                               <dt class="hidden">파스쿠찌 등장배경 내용</dt>
+                               <dd>01. Since 1883</dd>
+                               <dd>19세기, 에스프레소의 고향인 이탈리아에서 출발</dd>
+                               <dd><span class="hidden">라인</span></dd>
+                               <dd>카페 파스쿠찌가 처음 등장한 것은 19세기 말, 안토니오 파스쿠찌에 의해 몬테펠트로에서 시작되었으며, 아들인 마리오 파스쿠찌가 원두를 주석냄비에 볶아 새로운 맛과 향을 만드는 실험을 성공시키면서 본격적인 사업을 전개했습니다.</dd>
+                           </dl>
+                       </li>
+                   </ul>
+               </div>
+               <!-- ----------------//box01---------------- -->
+               <div class="box02">
+                   <ul>
+                       <li>
+                           <dl>
+                               <dt class="hidden">에스프레소 추출법 최초업계</dt>
+                               <dd>02. ~1946</dd>
+                               <dd>에스프레소 추출법을 업계 최초로 도입</dd>
+                               <dd><span class="hidden">라인</span></dd>
+                               <dd>파스쿠찌는 몬테체리뇨네 지역을 거점으로 확산하였고, 1946년 접어들면서 장비를 이용한 에스프레소 추출법을 업계 최초로 도입했으며, 로스팅 기계의 도입과 생산 라인을 구축함으로써 생산량 확대 및 고품질 원두생산이 가능한 환경을 마련했습니다.</dd>
+                           </dl>
+                       </li>
+                       <li><span>에스프레소 추출하는 이미지</span></li>
+                   </ul>
+               </div>
+               <!-- ----------------//box02---------------- --> 
+               <div class="box03">
+                   <ul>
+                       <li><span>매장에서 커피 구매하는 이미지</span></li>
+                       <li>
+                           <dl>
+                               <dt class="hidden">세계도시 진출한 글로벌 브랜드 파스쿠찌</dt>
+                               <dd>IN KOREA</dd>
+                               <dd>세계 20여개국 40개 도시에 진출한 글로벌 브랜드</dd>
+                               <dd><span class="hidden">라인</span></dd>
+                               <dd>현재 파스쿠찌는 이탈리아, 영국, 미국 등 전 세계 20여개 국의 40여 도시에 진출한 글로벌 브랜드로 성장했습니다. 한국에서는 지난 2001년 식품전문기업인 SPC그룹의 계열사 (주)파리크라상이 파스쿠찌 이탈리아 본사와 브랜드 도입 계약을 맺은 이후 지금까지 성곡적으로 발전해 왔습니다. 이제 전국 어디에서나 파스쿠찌 커피의 맛과 문화를 만나실 수 있습니다.</dd>
+                           </dl>
+                       </li>
+                   </ul>
+               </div>
+               <!-- ----------------//box03---------------- -->  
+           </div>
+           <!-- ----------------//textBox---------------- --> 
+        </main>
+        <!-- ----------------//main---------------- -->
+        <footer>
+           <div id="pasFoot">
+                <h2>파스쿠찌 웹 정보 및 로고</h2>
+                <div id="addBox">
+                    <ul class="add">
+                        <li><a href="#">해피포인트</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">윤리신고센터</a></li>
+                        <li><a href="#">거래희망사전등록</a></li>
+                    </ul>
+                    <address>
+                        <p>서울시 서초구 양재동 11-149 번지 | Tel 82 2 2276 6550 FAX 0505 073 0210 | 고객 상담 센터 080 731 2027</p>
+                        <p>COPYRIGHT 2012 THE PASCUCCI ALL RIGHTS RESERVED</p>
+                    </address>
+                </div>
+                <div id="famList">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend class="hidden">Family Site list</legend>
+                            <label for="familySite" class="hidden">Family Site</label>
+                            <select name="familySite" id="familySite">
+                                <option value="0">Family Site</option>
+				                <option value="http://www.spc.co.kr">SPC그룹</option>
+				                <option value="http://www.dunkindonuts.co.kr/main.html">던킨도너츠</option>
+				                <option value="http://www.baskinrobbins.co.kr/main/br_main.jsp">배스킨라빈스31</option>
+				                <option value="http://www.happypointcard.com/html/main/main.jsp">해피포인트카드</option>
+				                <option value="http://www.paris.co.kr">파리바게뜨</option>
+				                <option value="http://www.pariscroissant.co.kr">파리크라상</option>
+				                <option value="http://www.happyconpoint.com">해피콘</option>
+				                <option value="http://www.lovewoorimil.com">우리밀愛</option>
+				                <option value="http://baking.paris.co.kr">(주)한불제과제빵학원</option>
+				                <option value="http://www.pascucci.it">파스쿠찌 이탈리아</option>
+                            </select>
+                        </fieldset>
+                    </form>
+                    <dl class="snsBox">
+                        <dt class="hidden">sns</dt>
+                        <dd><a href="http://blog.naver.com/pascucci1883"><span>네이버블로그</span></a></dd>
+                        <dd><a href="https://www.facebook.com/pascucci1883"><span>페이스북</span></a></dd>
+                        <dd><a href="https://instagram.com/pascucci_kr"><span>인스타그램</span></a></dd>
+                    </dl>
+                </div>
+                <!-- ----------------//#famList---------------- -->
+            </div>
+            <!-- ----------------//#pasFoot---------------- --> 
+        </footer>
+    </div>
+    <!-- ----------------//.container---------------- -->
+</body>
+</html>

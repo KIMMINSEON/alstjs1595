@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0," />
+    <link rel="shortcut icon" type="image/x-icon" href="img/index/logo.png" />
+    <link rel="apple-touch-icon" href="img/index/logo.png" />
+    <!--reset-->
+    <link rel="stylesheet" href="css/lib/normalize.css" />
+    <!--design-->
+    <link rel="stylesheet" href="./font-awesome-4.6.1/css/font-awesome.min.css" />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+    <script src="js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!--[if lte IE 9]>
+	<script src="./js/dist/html5shiv.min.js"></script>
+	<script src="./js/dist/ie9.min.js"></script>
+	<script src="./js/dist/PIE.js"></script>
+	<script src="./js/dist/respond.min.js"></script>
+    <![endif]-->
+    <title>caffe pascucci</title>
+    <style>
+        header{width: 100%; height: 140px;}
+   /*header*/
+    header {width: 100%; height: 140px;}
+    header>dl a{position:absolute; left:-9999px;}
+    header>dl a:focus{left:0; top:0; width:100%; height:30px; text-align:center; color:#ffffff; background:#e21c39; font-size:16px; line-height:30px;}
+
+    #headBox>div{width: 960px; height: 100px; position:relative; margin: 0 auto;}
+    #headBox>div>h1{width: 310px; height: 38px; position:absolute; top: 50%; margin-top: -19px; left: 50%; margin-left: -155px;}
+    #headBox>div>h1>a{width: 310px; height: 38px; display:block;  background: url(../../img/index/header/logo.png); background-repeat:no-repeat; text-indent:-9999px;}
+
+    #lnb{width: 154px; height: 22px; position:absolute; top:41px; right:0; z-index:20;}
+    #lnb>dd{display:block; width: 77px; height: 100%; float: left;}
+    #lnb>dd>a{display:block; width: 77px; height: 100%; float: left; text-align:center; line-height:22px; font-family:notoLight; color: #aaaaaa; font-size: 0.75rem;}
+    #lnb>dd>a>i{line-height:22px; margin-right: 8px; color: #aaaaaa;}
+
+    /* header nav */
+
+    #nav{width: 100%; height: auto;/* border-top:1px solid #858585; border-bottom:1px solid #858585;*/ position: absolute; z-index: 500;}
+    .top_menu{width: 100%; height: 40px; margin: 0 auto; background-color:#E21C39;}
+    .top_menu>ul{width: 960px; height: 100%; margin: 0 auto; position: relative;}
+    .top_menu li{width:calc(100% / 6); height: 100%; display: block; float: left;}
+    .top_menu li a{display: block; float: left; width:100%; line-height:40px; text-align: center; color: #fff; font-size:0.8571rem; font-weight: bold;}
+
+    .sub_menu{width: 100%; height: 0; background-color: #fff; border-bottom:1px solid #E21C39; box-sizing: border-box; background-color: #fff; overflow: hidden;}
+    .sub_menu_box{width: 960px; height: 100%; margin: 0 auto;}
+    .sub_menu_box>dl{width:calc(100% / 6); height: 100%; float: left; transition:all 0.3s}
+    .sub_menu_box>dl:hover{background-color:#ededed;}
+    .sub_menu_box>dl>dt{display: none;}
+    .sub_menu_box>dl>dt,.sub_menu_box>dl>dd{width:100%; height: 40px;}
+    .sub_menu_box>dl>dt>a,.sub_menu_box>dl>dd>a{width:100%; display:block; text-align: center; line-height: 40px; font-size: 14px;}
+    .sub_menu_box>dl>dd>a:hover{background-color:#E21C39; color: #fff;}
+
+    /* header trigger*/
+    #trigger{display:none; width:36px; height: 26px; float: right; position: absolute; top: 26px; right: 40px; cursor: pointer;}
+    #trigger.on .one {transform: rotate(45deg) translate(7px, 7px);}
+    #trigger.on .two {opacity: 0;}
+    #trigger.on .three {transform: rotate(-45deg) translate(7px, -7.5px);}
+    .one,.two,.three {width: 100%; height: 6px; background: white; margin-top:4px; backface-visibility: hidden; transition-duration: 0.3s; background-color:#333; border-radius:5px;}
+    .one{margin-top: 0;}
+        
+    #mb_menu{display: none;}    
+    
+    /* ------------------------------------------------------ */
+        
+     @media screen and (min-width:641px) and (max-width:980px){
+    header{height: 78px;}
+    
+    #headBox>div{width: 100%; height: 78px; }
+    #lnb{display: none;}
+    
+    /* ---------- #nav ------------- */
+    
+    #nav{display:none;}
+    #mb_menu{position: fixed; top: 78px; right: -300px; width: 300px; height: 100%; display: block; background-color: #dad;}
+    .menu{right: 0; !important;}
+    #mb_menu>ul{width: 100%; height: 100%;}
+    #mb_menu>ul>li{width: 100%; height: auto;}
+    #mb_menu>ul>li>a{width: 100%; height:40px; display: block; text-align: center; line-height: 40px;}
+    .sub_st{width: 100%; height:80px;}
+    .sub_pr{width: 100%; height:200px;}
+    .sub_fr{width: 100%; height:240px;}
+    .sub_ev{width: 100%; height:120px;}
+    .sub_sto{width: 100%; height:80px;}
+    .sub_cu{width: 100%; height:160px;}
+    #mb_menu>ul>li>ul{background-color: #add;}
+    #mb_menu>ul>li li{width: 100%; height: 40px;}
+    #mb_menu>ul>li li>a{width: 100%; height: 100%; display: block; line-height: 40px; text-align: center; font-size: 14px;}
+         
+         
+    #trigger{width: 36px; display:block;}
+   
+}
+   
+
+    </style>
+    <script>
+    $(document).ready(function(){
+            /* --------pc메뉴--------- */
+                $(".top_menu").on("mouseenter", function() {
+                     $(".sub_menu").stop().animate({height: 280}, 700);
+                });
+                $(".sub_menu").on("mouseleave", function() {
+                    $(this).stop().animate({height: 0}, 700);
+                });
+           
+            /* --------a모바일메뉴--------- */
+           
+                $("#trigger").on("click",function(){
+                    $(this).prev("div").stop().toggleClass(".menu");
+                });
+                $("#mb_menu>ul>li>ul").hide();
+                $("#mb_menu>ul>li>a").on("click",function(){
+                    $("#mb_menu>ul>li>ul").stop().slideUp();
+                    $(this).next("ul").stop().slideToggle();  
+                });
+ });
+
+
+    </script>
+</head>
+
+<body>
+    <header id="headBox">
+            <dl>
+                <dt class="hidden">바로가기 메뉴</dt>
+                <dd><a href="#">본문 바로가기</a></dd>
+                <dd><a href="#nav">주 메뉴 바로가기</a></dd>
+            </dl>
+            <div>
+                <h1><a href="index.html">pascucci 로고 이미지</a></h1>
+                <dl id="lnb">
+                    <dt class="hidden">유틸메뉴</dt>
+                    <dd><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>LOGIN</a></dd>
+                    <dd><a href="#"><i class="fa fa-star" aria-hidden="true"></i>JOIN</a></dd>
+                </dl>
+            </div>
+            <nav id="nav">
+                <h1 class="hidden">메인메뉴</h1>
+                <div class="top_menu">
+                    <ul>
+                        <li><a href="#">STORY</a></li>
+                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="#">FRANCHISE</a></li>
+                        <li><a href="#">EVENT</a></li>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">CUSTOMER</a></li>
+                    </ul>
+                </div>
+                <div class="sub_menu">
+                    <div class="sub_menu_box">
+                        <dl>
+                            <dt><a href="#">STORY</a></dt>
+                            <dd><a href="#">브랜드스토리</a></dd>
+                            <dd><a href="#">커피스토리</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">PRODUCTS</a></dt>
+                            <dd><a href="#">Coffee</a></dd>
+                            <dd><a href="#">Beverage</a></dd>
+                            <dd><a href="#">Food</a></dd>
+                            <dd><a href="#">Gelato</a></dd>
+                            <dd><a href="#">MD</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">FRANCHISE</a></dt>
+                            <dd><a href="#">CAFFE PASCUCCI</a></dd>
+                            <dd><a href="#">가맹개설 안내</a></dd>
+                            <dd><a href="#">추천점포</a></dd>
+                            <dd><a href="#">정보공개서</a></dd>
+                            <dd><a href="#">가맹설명회 안내</a></dd>
+                            <dd><a href="#">FAQ/가맹점문의</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">EVENT</a></dt>
+                            <dd><a href="#">진행 중 이벤트</a></dd>
+                            <dd><a href="#">당첨자 발표</a></dd>
+                            <dd><a href="#">종료 이벤트</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">STORE</a></dt>
+                            <dd><a href="#">매장안내</a></dd>
+                            <dd><a href="#">매장소식</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">CUSTOMER</a></dt>
+                            <dd><a href="#">자주하는 질문</a></dd>
+                            <dd><a href="#">제휴혜택</a></dd>
+                            <dd><a href="#">1:1 문의하기</a></dd>
+                            <dd><a href="#">공지사항</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="mb_menu">
+            <ul id="mb_menu_box">
+                <li>
+                    <a href="#">STORY</a>
+                    <ul class="sub_st">
+                        <li><a href="#">브랜드스토리</a></li>
+                        <li><a href="#">커피스토리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PRODUCTS</a>
+                    <ul class="sub_pr">
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Beverage</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Gelato</a></li>
+                        <li><a href="#">MD</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">FRANCHISE</a>
+                    <ul class="sub_fr">
+                        <li><a href="#">CAFFE PASCUCCI</a></li>
+                        <li><a href="#">가맹개설 안내</a></li>
+                        <li><a href="#">추천점포</a></li>
+                        <li><a href="#">정보공개서</a></li>
+                        <li><a href="#">가맹설명회 안내</a></li>
+                        <li><a href="#">FAQ/가맹점문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">EVENT</a>
+                    <ul class="sub_ev">
+                        <li><a href="#">진행 중 이벤트</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">STORE</a>
+                    <ul class="sub_sto">
+                        <li><a href="#">매장안내</a></li>
+                        <li><a href="#">매장소식</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CUSTOMER</a>
+                    <ul class="sub_cu">
+                        <li><a href="#">자주하는 질문</a></li>
+                        <li><a href="#">제휴혜택</a></li>
+                        <li><a href="#">1:1 문의하기</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <a href="#" id="trigger" >
+            <span class="hidden">menu</span>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </a>
+</body>
+
+</html>

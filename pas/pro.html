@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0," />
+    <link rel="shortcut icon" type="image/x-icon" href="img/index/logo.png" />
+    <link rel="apple-touch-icon" href="img/index/logo.png" />
+    <!--reset-->
+    <link rel="stylesheet" href="css/lib/normalize.css" />
+    <!--design-->
+    <link rel="stylesheet" href="./font-awesome-4.6.1/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/pro/pro.css" />
+    
+    <script src="js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    
+    
+    <!--[if lte IE 9]>
+	<script src="./js/dist/html5shiv.min.js"></script>
+	<script src="./js/dist/ie9.min.js"></script>
+	<script src="./js/dist/PIE.js"></script>
+	<script src="./js/dist/respond.min.js"></script>
+    <![endif]-->
+    <title>caffe pascucci</title>
+    <style></style>
+    <script>
+    $(function(){
+	    /* -------- pc menu -------- */
+            
+            $(".top_menu").on("mouseenter", function() {
+                 $(".sub_menu").stop().animate({height: 280}, 700);
+            });
+            $(".sub_menu").on("mouseleave", function() {
+                $(this).stop().animate({height: 0}, 700);
+            }); 
+      });	
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header id="headBox">
+            <dl>
+		        <dt class="hidden">바로가기 메뉴</dt>
+		        <dd><a href="#">본문 바로가기</a></dd>
+		        <dd><a href="#nav">주 메뉴 바로가기</a></dd>
+	        </dl>
+	        <div>
+                <h1><a href="index.html">pascucci 로고 이미지</a></h1>
+                <dl id="lnb">
+			        <dt class="hidden">유틸메뉴</dt>
+			        <dd><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>LOGIN</a></dd>
+			        <dd><a href="#"><i class="fa fa-star" aria-hidden="true"></i>JOIN</a></dd>
+		        </dl>
+            </div>
+            <nav id="nav">
+                <h1 class="hidden">메인메뉴</h1>
+                <div class="top_menu">
+                    <ul>
+                        <li><a href="brn_st.html">STORY</a></li>
+                        <li><a href="pro.html">PRODUCTS</a></li>
+                        <li><a href="#">FRANCHISE</a></li>
+                        <li><a href="#">EVENT</a></li>
+                        <li><a href="#">STORE</a></li>
+                        <li><a href="#">CUSTOMER</a></li>
+                    </ul>
+                </div>
+                <div class="sub_menu">
+                    <div class="sub_menu_box">
+                        <dl>
+                            <dt><a href="#">STORY</a></dt>
+                            <dd><a href="brn_st.html">브랜드스토리</a></dd>
+                            <dd><a href="brn_st.html">커피스토리</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">PRODUCTS</a></dt>
+                            <dd><a href="pro.html">Coffee</a></dd>
+                            <dd><a href="pro.html">Beverage</a></dd>
+                            <dd><a href="pro.html">Food</a></dd>
+                            <dd><a href="pro.html">Gelato</a></dd>
+                            <dd><a href="pro.html">MD</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">FRANCHISE</a></dt>
+                            <dd><a href="#">CAFFE PASCUCCI</a></dd>
+                            <dd><a href="#">가맹개설 안내</a></dd>
+                            <dd><a href="#">추천점포</a></dd>
+                            <dd><a href="#">정보공개서</a></dd>
+                            <dd><a href="#">가맹설명회 안내</a></dd>
+                            <dd><a href="#">FAQ/가맹점문의</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">EVENT</a></dt>
+                            <dd><a href="#">진행 중 이벤트</a></dd>
+                            <dd><a href="#">당첨자 발표</a></dd>
+                            <dd><a href="#">종료 이벤트</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">STORE</a></dt>
+                            <dd><a href="#">매장안내</a></dd>
+                            <dd><a href="#">매장소식</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">CUSTOMER</a></dt>
+                            <dd><a href="#">자주하는 질문</a></dd>
+                            <dd><a href="#">제휴혜택</a></dd>
+                            <dd><a href="#">1:1 문의하기</a></dd>
+                            <dd><a href="#">공지사항</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </nav>
+            <div id="mb_menu">
+                <ul id="mb_menu_box">
+                    <li>
+                        <a href="#">STORY</a>
+                        <ul class="sub_st">
+                            <li><a href="#">브랜드스토리</a></li>
+                            <li><a href="#">커피스토리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCTS</a>
+                        <ul class="sub_pr">
+                            <li><a href="#">Coffee</a></li>
+                            <li><a href="#">Beverage</a></li>
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Gelato</a></li>
+                            <li><a href="#">MD</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">FRANCHISE</a>
+                        <ul class="sub_fr">
+                            <li><a href="#">CAFFE PASCUCCI</a></li>
+                            <li><a href="#">가맹개설 안내</a></li>
+                            <li><a href="#">추천점포</a></li>
+                            <li><a href="#">정보공개서</a></li>
+                            <li><a href="#">가맹설명회 안내</a></li>
+                            <li><a href="#">FAQ/가맹점문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">EVENT</a>
+                        <ul class="sub_ev">
+                            <li><a href="#">진행 중 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                            <li><a href="#">종료 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">STORE</a>
+                        <ul class="sub_sto">
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">매장소식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">CUSTOMER</a>
+                        <ul class="sub_cu">
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">제휴혜택</a></li>
+                            <li><a href="#">1:1 문의하기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#" id="trigger" >
+                    <span class="hidden">menu</span>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </a>
+            </div>
+        </header>
+        <!-- ----------------//#header---------------- -->
+        <div id="imgBox">
+            <dl>
+                <dt class="hidden">브랜드 스토리제목</dt>
+                <dd>PRODUCTS</dd>
+                <dd><span class="hidden">라인</span></dd>
+                <dd>COFFEE PASCUCCI</dd>
+            </dl>
+        </div>
+        <!-- ----------------//imgBox---------------- -->
+        <main>
+            <div id="textBox">
+                <h2>Coffee</h2>
+                <p>파스쿠찌의 깊고 풍부한 커피를 제공해 드립니다.</p>
+            </div>
+            <ul id="menuList">
+                <li><a href="#">Coffee</a></li>
+                <li><a href="#">Beverage</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Gelato</a></li>
+                <li><a href="#">MD</a></li>
+                <li><a href="#">On-line shop</a></li>
+            </ul>
+            <div id="bnImg">
+                <span class="hidden">제품광고</span>
+            </div>
+            <div id="proBox">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro01.png" alt="아메리카노 제품이미지">
+                            </div>
+                            <strong>아메리카노</strong>
+                            <p>Americano</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro02.png" alt="카페라떼 제품이미지">
+                            </div>
+                            <strong>카페라떼</strong>
+                            <p>Caffe' Latte</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro03.png" alt="바닐라 라떼 마끼아또 제품이미지">
+                            </div>
+                            <strong>바닐라 라떼 마끼아또</strong>
+                            <p>Latte Macchiato (Vanilla)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro04.png" alt="카라멜라떼 마끼아또 제품이미지">
+                            </div>
+                            <strong>카라멜라떼 마끼아또</strong>
+                            <p>Latte Macchiato (Caramel)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro05.png" alt="화이트초코라떼 마끼아또 제품이미지">
+                            </div>
+                            <strong>화이트초코라떼 마끼아또</strong>
+                            <p>Latte Macchiato (White Choclate)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro06.png" alt="카페모카 제품이미지">
+                            </div>
+                            <strong>카페모카</strong>
+                            <p>Caffe' Mocha</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro07.png" alt="아이스바닐라 라떼 마끼아또 제품이미지">
+                            </div>
+                            <strong>아이스바닐라 라떼 마끼아또</strong>
+                            <p>Iced Latte Macchiato (Vanilla)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro08.png" alt="아이스 화이트초코라떼 마끼아또 제품이미지">
+                            </div>
+                            <strong>아이스 화이트초코라떼 마끼아또</strong>
+                            <p>Iced Latte Macchiato (White Choclate)</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro09.png" alt="아이스 카라멜 모카 제품이미지">
+                            </div>
+                            <strong>아이스 카라멜 모카</strong>
+                            <p>Iced Caramel Mocha</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro10.png" alt="핫초콜렛 제품이미지">
+                            </div>
+                            <strong>핫초콜렛</strong>
+                            <p>Hot Chocolate</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro11.png" alt="그린티 라떼 제품이미지">
+                            </div>
+                            <strong>그린티 라떼</strong>
+                            <p>Green Tea Latte</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro12.png" alt="카푸치노 제품이미지">
+                            </div>
+                            <strong>카푸치노</strong>
+                            <p>Cappuccino</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">
+                                <img src="img/pro/pro13.png" alt="아이스카페라떼 제품이미지">
+                            </div>
+                            <strong>아이스 카페라뗴</strong>
+                            <p>Iced Caffe' Latte</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pageBtn">
+                    <span class="pageBtnBox">
+                        <a href="#" class="pageBtn_prev"><span>이전으로</span></a>
+                        <a href="#" class="on">1</a>
+                        <a href="#" class="pageBtn_next"><span>다음으로</span></a>
+                    </span>
+                </div>
+            </div>
+        </main>
+        <!-- ----------------//main---------------- -->
+        <footer>
+           <div id="pasFoot">
+                <h2>파스쿠찌 웹 정보 및 로고</h2>
+                <div id="addBox">
+                    <ul class="add">
+                        <li><a href="#">해피포인트</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">윤리신고센터</a></li>
+                        <li><a href="#">거래희망사전등록</a></li>
+                    </ul>
+                    <address>
+                        <p>서울시 서초구 양재동 11-149 번지 | Tel 82 2 2276 6550 FAX 0505 073 0210 | 고객 상담 센터 080 731 2027</p>
+                        <p>COPYRIGHT 2012 THE PASCUCCI ALL RIGHTS RESERVED</p>
+                    </address>
+                </div>
+                <div id="famList">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend class="hidden">Family Site list</legend>
+                            <label for="familySite" class="hidden">Family Site</label>
+                            <select name="familySite" id="familySite">
+                                <option value="0">Family Site</option>
+				                <option value="http://www.spc.co.kr">SPC그룹</option>
+				                <option value="http://www.dunkindonuts.co.kr/main.html">던킨도너츠</option>
+				                <option value="http://www.baskinrobbins.co.kr/main/br_main.jsp">배스킨라빈스31</option>
+				                <option value="http://www.happypointcard.com/html/main/main.jsp">해피포인트카드</option>
+				                <option value="http://www.paris.co.kr">파리바게뜨</option>
+				                <option value="http://www.pariscroissant.co.kr">파리크라상</option>
+				                <option value="http://www.happyconpoint.com">해피콘</option>
+				                <option value="http://www.lovewoorimil.com">우리밀愛</option>
+				                <option value="http://baking.paris.co.kr">(주)한불제과제빵학원</option>
+				                <option value="http://www.pascucci.it">파스쿠찌 이탈리아</option>
+                            </select>
+                        </fieldset>
+                    </form>
+                    <dl class="snsBox">
+                        <dt class="hidden">sns</dt>
+                        <dd><a href="http://blog.naver.com/pascucci1883"><span>네이버블로그</span></a></dd>
+                        <dd><a href="https://www.facebook.com/pascucci1883"><span>페이스북</span></a></dd>
+                        <dd><a href="https://instagram.com/pascucci_kr"><span>인스타그램</span></a></dd>
+                    </dl>
+                </div>
+                <!-- ----------------//#famList---------------- -->
+            </div>
+            <!-- ----------------//#pasFoot---------------- --> 
+        </footer>
+    </div>
+    <!-- ----------------//.container---------------- -->
+</body>
+</html>
