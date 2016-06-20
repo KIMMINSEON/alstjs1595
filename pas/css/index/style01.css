@@ -1,0 +1,21 @@
+/* style.css */
+
+@font-face {
+    font-family:'notoLight';
+    src:url('../../font/NotoSansCJKkr-Light.otf.eot');
+    src:url('../../font/NotoSansCJKkr-Light.otf.eot')format('eot?') format('eot');
+    src:url('../../font/NotoSansCJKkr-Light.woff')format('woff');
+    src:url('※'),url('../../font/NotoSansCJKkr-Light.otf')format('opentype');
+    
+}
+*{font-family:notoLight;}
+.container {width: 100%; height: auto;}
+header{width: 100%; height: 140px;}
+#banner {width: 100%; height: 800px;}
+main{height: 1516px; padding-top: 84px; box-sizing: border-box;}
+#newBest {width: 960px; height: 354px; margin:0 auto;  background-color: #bbb;}
+#artBox{width: 960px; height: 952px; margin: 0 auto; margin-top: 40px;/* box-sizing:border-box; border:1px solid #333;*/}
+
+
+
+

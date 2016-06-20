@@ -1,0 +1,3 @@
+#header {width: 100%; height: 140px;}
+header>dl a{position:absolute; left:-9999px;}
+header>dl a:focus{left:0; top:0; width:100%; height:30px; text-align:center; color:#ffffff; background:#e21c39; font-size:16px; line-height:30px;}
