@@ -1,0 +1,43 @@
+/* article.css */
+/* -- #article 메뉴 ------------------------------------------------*/
+
+#article{width: 960px; height: 1392px; padding-top:116px; }
+
+/*#article>h2{width: 960px; height: 15px; margin-bottom: 62px; font-size: 18px; font-family:notoBold; line-height: 15px; color:#a01858;}*/
+#article>h2{width: 960px; height: 36px; margin-bottom: 44px; font-size: 2.5rem; font-family:notoBold; line-height: 36px; color:#a01858;}
+#cf_navi>ul{width: 960px; height: 39px;  }
+#cf_navi>ul>li{width:319px; height: 38px; display: block; float: left; border:1px solid #e7e7e7; border-left:none; margin-bottom: -1px;  border-bottom:1px solid #a01858;}
+#cf_navi>ul>li.active{background-color: #a01851;}
+#cf_navi>ul>li.active>a{color: #fff;}
+#cf_navi>ul>li>a{width:100%; height: 100%; display: block; float: left; line-height:37px; font-family:notoMedium; font-size:12pt; color: #3b3b3b; text-align: center;} 
+
+/* -- #article 과자선택 ---------------------------------------------*/
+
+#cook_list{width: 148px; height: 30px; border:1px solid #d0d0d0;}
+#article>form>fieldset{margin-top: 29px; float: right; margin-bottom: 29px;}
+#article>form>fieldset>button{width: 50px; height: 32px; background-color: #a01858; text-align: center; line-height: 32px; color:#fff; margin-left:4px; font-family:notoLight; font-size: 14px;}
+
+video{width: 960px; height: 496px;}
+
+/* -- #article video list ----------------------------------------*/
+
+#video_box{width: 960px; height: 542px; border-top:1px solid #d0d0d0; border-bottom:1px solid #d0d0d0; margin-top: 58px; padding-top:40px;}
+#video_box>ul{width: 952px; height: 428px; padding-left:8px;}
+#video_box>ul>li{width: 230px; height: 194px; display: block; float: left; margin-right: 8px;}
+#video_box>ul>li:nth-child(5),#video_box>ul>li:nth-child(6),#video_box>ul>li:nth-child(7),#video_box>ul>li:nth-child(8){margin-top: 40px;}
+#video_box>ul>li>a{width: 230px; height: 194px; display: block;}
+#video_box>ul>li>a>p{width: 222px; height: 48px; border:1px solid #e9e9e9; font-family:notoLight; font-size:0.8rem; color: #888; padding-top:12px; padding-left: 6px;}
+
+/* -- #article video btn ----------------------------------------*/
+.pageBtn{width: 960px; height: 70px; padding-top: 42px;}
+.pageBtnBox{width: 240px; height: 30px; display: block; margin: 0 auto; text-align: center;}
+.pageBtnBox>a{width: 30px; height: 30px; line-height:30px; float:left; margin-right: 5px; font-family:notoBold; font-size: 1rem; color: #505050; }
+.pageBtnBox>a.on{color: #fa8000;}
+.pageBtnBox>a:last-child{margin-right: 0;}
+
+
+
+
+
+
+

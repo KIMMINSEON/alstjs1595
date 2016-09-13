@@ -1,0 +1,13 @@
+/* footer.css */
+/* -- #footer.css ------------------------------------------------*/
+footer{width: 100%; height: 190px; background-color:#f7f7f7;}
+#foot_box{width: 960px; height: 126px; margin:0 auto; padding-top:64px;}
+#foot_box>h2{width:105px; height: 20px; margin-left:14px; margin-right: 15px; float: left;}
+address{width: 520px; height: 70px; font-size:0.7em; color:#aaa; float: left;}
+#fm_list {display: block; float:left; width: 112px; height: 28px; margin-left:36px;
+}
+#fm_list #opt_list{width: 100%; height: 100%;}
+
+#mark{width: 112px; height: 46px; float: left; margin-left:14px;}
+#mark>img{width: 100%; height: 100%;}
+

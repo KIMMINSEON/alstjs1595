@@ -1,0 +1,8 @@
+#company_warp {width: 100%;height:auto; padding-top: 74px;}
+#company_warp>div{margin: 0 auto;}
+.title{width: 980px; height:auto;border-bottom: 1px solid rgba(212, 212, 212, 0.72);}
+.story{width: 980px; height: 427px; background-color: aqua;margin: 0 auto;}
+.story_01{width: 980px; height: 24px; display: flex; justify-content: center;
+         padding-bottom: 50px;}
+
+.ceo {width: 980px; height: auto; }

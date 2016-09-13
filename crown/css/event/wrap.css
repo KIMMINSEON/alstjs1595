@@ -1,0 +1,29 @@
+/* wrap.css */
+
+@font-face {
+    font-family:'notoLight';
+    src:url('../../font/NotoSansCJKkr-Light.otf.eot');
+    src:url('../../font/NotoSansCJKkr-Light.otf.eot')format('eot?') format('eot');
+    src:url('../../font/NotoSansCJKkr-Light.woff')format('woff');
+    src:url('※'),url('../../font/NotoSansCJKkr-Light.otf')format('opentype');
+    
+}
+@font-face {
+    font-family:'notoMedium';
+    src:url('../../font/NotoSansCJKkr-Medium.otf.eot');
+    src:url('../../font/NotoSansCJKkr-Medium.otf.eot')format('eot?') format('eot');
+    src:url('../../font/NotoSansCJKkr-Medium.woff')format('woff');
+    src:url('※'),url('../../font/NotoSansCJKkr-Medium.otf')format('opentype');
+    
+}
+@font-face {
+    font-family:'notoBold';
+    src:url('../../font/NotoSansCJKkr-Bold.otf.eot');
+    src:url('../../font/NotoSansCJKkr-Bold.otf.eot')format('eot?') format('eot');
+    src:url('../../font/NotoSansCJKkr-Bold.woff')format('woff');
+    src:url('※'),url('../../font/NotoSansCJKkr-Bold.otf')format('opentype');
+    
+}
+/* -- #wrap.css ------------------------------------------------*/
+#wrap{width: 100%; height: auto;}
+#wrap>*{margin:0 auto;}
