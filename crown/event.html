@@ -1,0 +1,228 @@
+
+          <!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+    <!-- reset.css -->
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <!-- design.css -->
+    <link rel="stylesheet" href="./css/event/wrap.css" />
+    <link rel="stylesheet" href="./css/event/header.css" />
+    <link rel="stylesheet" href="./css/event/section.css" />
+    <link rel="stylesheet" href="./css/event/site_map.css" />
+    <link rel="stylesheet" href="./css/event/footer.css" />
+    
+    <script src="js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+<!--[if lte IE 9]>
+	<script src="./js/dist/html5shiv.min.js"></script>
+	<script src="./js/dist/ie9.min.js"></script>
+	<script src="./js/dist/PIE.js"></script>
+	<script src="./js/dist/respond.min.js"></script>
+<![endif]-->
+    <title>Document</title>
+    <style>
+        
+    </style>
+    <script>
+       
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="menu_box">
+                <h1>
+                    <a href="index.html" title="크라운제과">
+                        <span>crown</span>
+                    </a>
+                </h1>
+                <div id="gnb">
+                <ul>
+                    <li class="gnb_01"><a href="./product.html"><span>제품소개</span></a><span class="gnb_bar"></span></li>
+                    <li class="gnb_02"><a href="./event.html"><span>이벤트</span></a><span class="gnb_bar"></span></li>
+                    <li class="gnb_03"><a href="./cf.html"><span>CF</span></a><span class="gnb_bar"></span></li>
+                    <li class="gnb_04"><a href="./notice.html"><span>고객센터</span></a><span class="gnb_bar"></span></li>
+                    <li class="gnb_05"><a href="./info.html"><span>회사소개</span></a><span class="gnb_bar"></span></li>
+                </ul>
+                </div><!--gnb-->
+                <div id="search_box">
+                    <a href=""><span>sitemap</span></a>
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend></legend>
+                            <label for="searchBox"></label>
+                            <input type="search" name="searchBox" id="searchBox" value="" placeholder="search"/>
+                        </fieldset>
+                    </form> 
+                </div><!--search_box-->
+            </div><!--menu_box-->
+        </header>
+        <!---------------------------------------------------------header-------------------------------------------------------------->
+         <section>
+          <article id="article">
+           <h2>이벤트</h2>
+           <div id="banner">
+                <div class="btn left_btn">
+                   <button type="button">
+                   <i class="fa fa-angle-left" aria-hidden="true"></i>
+                   <span>왼버튼</span></button>
+                </div><!--btn left_btn-->
+                <div class="btn right_btn">
+                    <button type="button">
+                   <i class="fa fa-angle-right" aria-hidden="true"></i>
+                   <span>오른버튼</span></button>
+               </div><!--btn right_btn-->
+               
+            <ul class="banner_box">
+                <li class="banner_01"></li>
+                <li class="banner_02"></li>
+                <li class="banner_03"></li>
+                <li class="banner_04"></li>
+                <li class="banner_05"></li>
+            </ul>
+            </div>
+            <!--banner-->
+           <div id="tb_sub">
+               <div id="order">
+                   <ul>
+                       <li id="newest"><a href="#">최신순</a></li>
+                       <li id="inquire"><a href="#">조회순</a></li>
+                   </ul> 
+               </div><!--order-->
+                <div id="nt_box">               
+                    <form action="" method="get">
+                        <fieldset>
+                           <legend></legend>
+                            <select name="list" id="list">
+                                <option>제목</option>
+                                <option>내용</option>
+                                <option>제목+내용</option>
+                            </select>
+                            <label for="nt_box"></label>
+                            <input type="search" name="sec_box" id="sec_box" valie="" placeholder="검색단어를 입력하세요" />
+                        </fieldset>
+                    </form>                
+                </div><!--search-->
+            </div><!--tb_sub-->
+            <!-- 리스트 게시판 시작-->            
+            <table summary="공지사항 리스트">
+               <thead>
+                   <tr>
+                       <th>제목</th>
+                       <th>날짜</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr><td scope="row"><a href="#">코코몽 이벤트 1차 당첨자 공지</a></td><td>2013.05.31</td></tr>
+                   <tr><td scope="row"><a href="#">오페라 빈칸채우기 이벤트 2차 당첨자 공지</a></td><td>2013.04.26</td></tr>
+                   <tr><td scope="row"><a href="#">오페라 빈칸채우기 이벤트 1차 당첨자 공지</a></td><td>2013.04.01</td></tr>
+                   <tr><td scope="row"><a href="#">빅파이 게릴라 이벤트</a></td><td>2012.12.12</td></tr>
+                   <tr><td scope="row"><a href="#">초코스낵 3총사와 아이스 에이지 4 속으로!</a></td><td>2012.06.13</td></tr>
+                   <tr><td scope="row"><a href="#">2012 런던올림픽 승리기원 크라운 메달 비스켓 경품..</a></td><td>2012.06.13</td></tr>
+                   <tr><td scope="row"><a href="#">콘칲,못말리는 신짱먹고 패션컬러밴드를 모아..</a></td><td>2011.0./12</td></tr>
+                   <tr><td scope="row"><a href="#">빅카라멜 쵸코, 카라멜 땅콩 먹고 리오 보자!</a></td><td>2011.07.08</td></tr>
+                   <tr><td scope="row"><a href="#">크라운산도 출시 50주년 기념 Event</a></td><td>2011.05.19</td></tr>
+                   <tr><td scope="row"><a href="#">아이유와 함께하는 마이쮸 이벤트</a></td><td>2010.11.15</td></tr>
+                   <tr><td scope="row"><a href="#">하임 엡솔루트 이벤트 관련 공지사항입니다.</a></td><td>2009.08.07</td></tr>
+                   <tr><td scope="row"><a href="#">올가닉 "자연이야기" 이벤트 공지사항</a></td><td>2009.06.17</td></tr>
+               </tbody>
+              </table>
+              <div class="pageBtn">
+                    <span class="pageBtnBox">
+                        <a href="#" class="pageBtn_fst">&lt;&lt;<span>처음으로</span></a>
+                        <a href="#" class="pageBtn_prev">&lt;<span>이전으로</span></a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#" class="pageBtn_next">&gt;<span>다음으로</span></a>
+                        <a href="#" class="pageBtn_lst">&gt;&gt;<span>마지막으로</span></a>
+                    </span>
+                </div>
+           </article>
+        </section>
+        <!---------------------------------------------------------section-------------------------------------------------------------->
+<div id="site_map">
+            <ul>
+                <li class="sm_nav01">
+                    <a href="./product.html">제품소개</a>
+                    <ul>
+                        <li class="sm_nav01_01"><a href="./product.html">비스킷류</a></li>
+                        <li class="sm_nav01_02"><a href="./product.html">스낵류</a></li>
+                        <li class="sm_nav01_03"><a href="./product.html">파이류</a></li>
+                        <li class="sm_nav01_04"><a href="./product.html">캔디류</a></li>
+                        <li class="sm_nav01_05"><a href="./product.html">초콜릿류</a></li>
+                    </ul>
+                </li>
+                <li class="sm_nav02"><a href="./event.html">이벤트</a>
+                    <ul>
+                        <li class="sm_nav02_01"><a href="./event.html">진행중인 이벤트</a></li>
+                        <li class="sm_nav02_02"><a href="./event.html">지난 이벤트</a></li>
+                        <li class="sm_nav02_03"><a href="./event.html">당첨자 발표</a></li>
+                    </ul>
+                </li>
+                <li class="sm_nav03"><a href="./cf.html">CF</a>
+                    <ul>
+                        <li class="sm_nav03_01"><a href="./cf.html">크라운 CF</a></li>
+                        <li class="sm_nav03_02"><a href="./cf.html">스크린세이버</a></li>
+                        <li class="sm_nav03_03"><a href="./cf.html">월페이퍼</a></li>
+                    </ul>
+                </li>
+                <li class="sm_nav04"><a href="./notice.html">고객센터</a>
+                    <ul>
+                        <li class="sm_nav04_01"><a href="./notice.html">공지사항</a></li>
+                        <li class="sm_nav04_02"><a href="./notice.html">FAQ</a></li>
+                        <li class="sm_nav04_03"><a href="./notice.html">고객의 소리</a></li>
+                        <li class="sm_nav04_03"><a href="./notice.html">고객센터</a></li>
+                    </ul>
+                </li>
+                <li class="sm_nav05"><a href="./info.html">회사소개</a>
+                    <ul>
+                        <li class="sm_nav05_01"><a href="./info.html">ABOUT 크라운 제과</a></li>
+                        <li class="sm_nav05_02"><a href="./info.html">크라운정신</a></li>
+                        <li class="sm_nav05_03"><a href="./info.html">계열사</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div id="foot_box">
+                <h2>
+                    <img src="./img/foot_logo.jpg" alt="크라운제과로고">
+                </h2>
+                <address>
+                    서울특별시 용산구 한강대로72길 3  │(주)크라운제과 │ 대표이사 장완수 / 윤석빈<br/>
+                    문의전화 02-791-9133 │FAX  02-791-9119 │개인정보 취급방침 │이메일추출 방지정책 운영자메일 │운영자메일<br/>
+                    크라운제과 고객센터 │080-709-2580 │사업자등록번호 216-92-00486 │ 사업자정보 확인<br/>
+                    당사에서 운영하는 공장, 영업소, 지점 등에는 영상정보처리장치가 설치되어 있습니다.<br/> COPYRIGHT 2007 All RIGHT RESERVED.<br/>
+                </address>
+                <div id="fm_list">
+                    <form  action="" method="get">
+                        <fieldset>
+                            <select name="opt_list" id="opt_list">
+                                <optgroup>
+                                    <option value="family site">해태</option>
+                                    <option value="family site">빨라쪼</option>
+                                    <option value="family site">아트밸리리</option>
+                                    <option value="family site">(주)씨에이치테크</option>
+                                    <option value="family site">코디서비스코리아</option>
+                                    <option value="family site">영그린</option>
+                                </optgroup>
+                            </select>    
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="mark">
+                    <img src="./img/mark_01.png" alt="norton로고이미지" />
+                </div><!--mark-->
+            </div><!--foot_box-->
+        </footer>
+        <!---------------------------------------------------------footer-------------------------------------------------------------->
+    </div>
+</body>
+</html>
