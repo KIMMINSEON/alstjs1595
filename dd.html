@@ -25,62 +25,153 @@
     <script src="js/prefixfree.min.js"></script>
     <title>MINSEON HOME</title>
     <style>
-  @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-body { background:#fff; }
-form { max-width:420px; margin:50px auto; }
-
-.feedback-input {
-  color:white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #40487c;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
+.container{
+	max-width: 240px;
+	margin: 5% auto;
+	
+	background-color: #fff;
+	overflow: hidden;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px #222;
 }
 
-.feedback-input:focus { border:2px solid #40487c; }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
+.text-center{
+	text-align: center;
+	margin-bottom: 1em;
 }
 
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:#aaa;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+.gallery ul{
+	list-style: none;
+	padding: 0;
 }
-[type="submit"]:hover { background:#40487c; }
+.gallery li{
+	display: inline-block;
+	float: left;
+	width: 28.3333%;
+	margin: 2.5%;
+	position: relative;
+	font-size: 0;
+   transition: .25s box-shadow ease-in-out .1s;
+}
+
+@media only screen and (max-width: 680px) {
+  .gallery li {
+    width: 45%;
+  }
+  .lightbox img {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .gallery li {
+    width: 100%;
+    margin: 2% 0;
+  }
+}
+
+.gallery li:hover{
+  box-shadow: 0 0 15px #4e5d6a;
+}
+
+.gallery img{
+	width: 100%;
+}
+
+/*Lighbox CSS*/
+
+
+.lightbox{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+.lightbox img{
+	max-width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+.lightbox .caption{
+	margin: 15px auto;
+	width: 50%;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 700;
+	color: #eee;
+}
     </style>
     <script>
+        $(function(){
+            // Create a lightbox
+
+var $lightbox = $("<div class='lightbox'></div>");
+var $img = $("<img>");
+var $caption = $("<p class='caption'></p>");
+
+
+// Add image and caption to lightbox
+
+$lightbox
+	.append($img)
+	.append($caption);
+
+// Add lighbox to document
+
+$('body').append($lightbox);
+
+
+$('.gallery li').click(function (e) {
+	e.preventDefault();
+
+	// Get image link and description
+	var src = $(this).children('img').attr("src");
+	var cap = $(this).children('img').attr("alt");
+
+	// Add data to lighbox
+
+	$img.attr('src',src);
+	$caption.text(cap);
+
+	// Show lightbox
+
+	$lightbox.fadeIn('fast');
+
+	$lightbox.click(function () {
+		$lightbox.fadeOut('fast');
+	});
+});
+        });
     </script>
 </head>
 <body>
-<form>      
-  <input name="Name" type="text" class="feedback-input" placeholder="Name" />   
-  <input name="Email Address" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-  <input type="submit" value="SUBMIT"/>
-</form>
+<div class="container">
+		<h2 class="text-center">Lightbox Gallery</h2>
+		<div class="gallery">
+			<ul>
+				<li><img src="http://placehold.it/300/f1b702/fff&text=image1" alt="Losss quo."></li>
+				<li><img src="http://placehold.it/300/d2f1b2/222&text=image2" alt="Lorem ipsum dolsssccus."></li>
+				<li><img src="http://placehold.it/300/eee/000&text=image3" alt="ssum!"></li>
+				<li><img src="http://placehold.it/300/222/fff&text=image4" alt="Loreess, nihil!"></li>
+				<li><img src="http://placehold.it/300/b47f99/000&text=image5" alt="Lque, porro eligendi illo placeat?"></li>
+				<li><img src="http://placehold.it/300/e1d400/000&text=image6" alt="Loros."></li>
+				<li><img src="http://placehold.it/300/222/fff&text=image4" alt="Loreess, nihil!"></li>
+				<li><img src="http://placehold.it/300/b47f99/000&text=image5" alt="Lque, porro eligendi illo placeat?"></li>
+				<li><img src="http://placehold.it/300/e1d400/000&text=image6" alt="Loros."></li>
+				
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
