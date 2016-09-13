@@ -19,12 +19,12 @@ section{width: 100%; height: 984px; background-size: cover;}
 ====================================================================
 */
 
-#popupBox1{width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); position: fixed; z-index: 100; top: 0; left: 0;}
+/*#popupBox1{width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); position: fixed; z-index: 100; top: 0; left: 0;}
 .popup{width: 500px; height: 500px; background-color:rgba(255,255,255,0.7); position:absolute; top: 50%; left:50%; margin-left:-250px; margin-top:-250px;}
 .popup>button{width:30px; height:30px; background-color:#333; position: absolute; top: -15px; right: -15px; cursor: pointer; z-index: 100;}
 .popup>button>i{font-size: 20px; color:#fff; }
 .popup>button>span{width: 0; height: 0; display: block; overflow: hidden;}
-.contentPopup{width: 100%; height: 100%;}
+.contentPopup{width: 100%; height: 100%;}*/
 
 
 /* 
@@ -142,7 +142,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 .siteImgBox{width: 80%; height: 100%; float: left; padding-top: 40px; box-sizing:border-box;}
 .siteImg{width: 100%; height: 100%; background-position: center; background-repeat: no-repeat; background-size:contain;}
 #site1 .siteImg {background-image:url(../img/site01.png);}
-#site2 .siteImg {background-image:url(../img/site02.png);}
+#site2 .siteImg {background-image:url(../img/site02_1.png);}
 /* 
 ====================================================================
     site1
@@ -152,11 +152,15 @@ section{width: 100%; height: 984px; background-size: cover;}
 #site1 {background-color: #40487c;}
 
 /* ********* site1_num ****************** */
-
+    
 #site1 .numA>p{color: #fff;}
-#site1 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}
-#site1 .numA>a{color: #fff; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 35px auto 0 auto; font-weight:bold; border: 1px solid  #fff; box-sizing: border-box; transition:all 0.5s;}
-#site1 .numA>a:hover{color: #40487c; background-color: #fff;}
+#site1 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}  
+#site1 .numA>ul{width: 140px; height: 126px; margin:0 auto;}
+#site1 .numA>ul>li{display: block; width: 140px; height: 28px; margin-top: 35px; border: 1px solid  #fff; box-sizing: border-box;}
+#site1 .numA>ul>li>a{color: #fff; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; font-weight:bold; transition:all 0.5s;}
+#site1 .numA>ul>li:nth-of-type(2){margin-top:20px;}
+#site1 .numA>ul>li>a:hover{color: #40487c; background-color: #fff;}
+
 
 /* 
 ====================================================================
@@ -173,9 +177,12 @@ section{width: 100%; height: 984px; background-size: cover;}
 */
 
 #site2 .numA>p{color: #40487c;}
-#site2 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}
-#site2 .numA>a{color: #40487c; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 35px auto 0 auto; font-weight:bold; border: 1px solid  #40487c; box-sizing: border-box; transition:all 0.5s;}
-#site2 .numA>a:hover{color: #fff; background-color: #40487c;}
+#site2 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}  
+#site2 .numA>ul{width: 140px; height: 126px; margin:0 auto;}
+#site2 .numA>ul>li{display: block; width: 140px; height: 28px; margin-top: 35px; border: 1px solid  #40487c; box-sizing: border-box;}
+#site2 .numA>ul>li>a{color: #40487c; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; font-weight:bold; transition:all 0.5s;}
+#site2 .numA>ul>li:nth-of-type(2){margin-top:20px;}
+#site2 .numA>ul>li>a:hover{color: #fff; background-color: #40487c;}
 
 /* 
 ====================================================================
@@ -183,6 +190,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 ====================================================================
 */
 
+/*
 #work {background-color: #40487c;}
 #work p{color: #ffffff;}
 
@@ -194,6 +202,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 .workList>ul a:hover span{opacity: 0.7}
 .workList>ul img{width: 100%; height: auto;}
 .workList>ul span{width: 100%; height: 100%; background-color: #000;  position: absolute; left: 0; top:0; text-align: center; opacity:0;  transition:all 0.4s; color: #fff; font:800 30px notokr-light; line-height:271.3333px; }
+*/
 
 /* 
 ====================================================================
@@ -201,7 +210,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 ====================================================================
 */
 
-#contact {background-color:#fff; height:984px;}
+#contact {background-color:#f0f0f0; height:984px;}
 
 .contact {width: 80%; height: 100%; float: left; background-color: #f0f0f0;}
 
@@ -215,7 +224,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 .contact input,textarea{width: 100%; border:none; border-bottom: 1px solid #40487c; padding: 5px;}
 textarea{height: 250px;}
 .contact li:nth-of-type(1) input, .contact li:nth-of-type(2) input{height: 45px;}
-.contact input[type="submit"]{width: 150px; height: 40px; display: block; margin: 0 auto; background-color: #ddd; color: #333; border:none; border-radius: 8px; transition: all 0.3s;}
+.contact input[type="submit"]{width: 150px; height: 40px; display: block; margin: 0 auto; background-color: #ddd; color: #333; border:none; border:none; border-radius: 8px; transition: all 0.3s; }
 .contact input[type="submit"]:hover{background-color: #40487c; color: #fff;}
 
 }

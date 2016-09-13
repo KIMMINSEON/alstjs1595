@@ -63,12 +63,12 @@
     .wo_box{height:148px;}
     .aw_box{height:192px; margin-bottom:0px;}
 .tit{width: 100%; height: 67px;}
-.tit>div{width: 100%; height: 18px; margin-top: 14px;}
+.tit>div{width: 100%; height: 16px; margin-top: 14px;}
 .tit img{margin-left: auto; margin-right: auto; display: block;}
     .tit hr{width: 10%; margin-top: 7.5px; color: #40487c;}
     .tit hr:nth-of-type(1){float: left;}
     .tit hr:nth-of-type(2){float: right;}
-    .tit h2{width: 80%; height: 18px; font: 800 16px notokr-light; display: block; float:left; line-height: 16px; text-align: center;}
+    .tit h2{width: 80%; height: 16px; font: 800 16px notokr-light; display: block; float:left; line-height: 16px; text-align: center;}
 
 #t2>div{width: 100%; margin-bottom:42px;}
     .li_box{height:583px;}
@@ -103,8 +103,9 @@
 
 .aw_box ul>li,.li_box ul>li{width: 100%; margin-top: 19px; height: 43px;}
 .aw_box ul>li>p,.li_box ul>li>p{width:25%;float:left; font: 300 14px notokr-light;  height: 19px;}
+    
 .aw_box ul>li>span,.li_box ul>li>span{width: 68%; float:left; height: 19px; font: 300 14px notokr-light; line-height:19px; margin-left: 7%;}
-.aw_box ul>li>span:last-child,.li_box ul>li>span:last-child{width: 100%; float:right; margin-top: 5px; border-top: 1px solid  #ddd; box-sizing: border-box;}
+.aw_box ul>li>span:nth-of-type(1),.li_box ul>li>span:nth-of-type(1){display:none;}
 
 /* ********* about work 꾸미기 ****************** */
 
@@ -122,7 +123,7 @@
 .siteImgBox{width: 100%; height: calc(100% - 313px);}
 .siteImg{width: 100%; height: 100%; background-position: center; background-repeat: no-repeat; background-size:contain; padding-top: 40px;}
 #site1 .siteImg {background-image:url(../img/site01.png);}
-#site2 .siteImg {background-image:url(../img/site02.png);}
+#site2 .siteImg {background-image:url(../img/site02_1.png);}
 /* 
 ====================================================================
     site1
@@ -134,13 +135,16 @@
 /* ********* site1_num ****************** */
 
 #site1 .num{width: 100%; height: 213px; padding-top: 60px;}
-#site1 .numA{height: 213px; margin-top: 0;}  
-#site1 .numA>img{}  
+#site1 .numA{height: 213px; margin-top: 0;}
 #site1 .numA>p{color: #fff; font: 300 30px notokr-light; line-height: 30px;}
-#site1 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 16px notokr-light;  line-height: 18px;}
-#site1 .numA>a{color: #fff; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 20px auto 0 auto; font-weight:bold; border: 1px solid  #fff; box-sizing: border-box; transition:all 0.5s;}
-#site1 .numA>a:hover{color: #40487c; background-color: #fff;}
-
+#site1 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 16px notokr-light;  line-height: 18px;}  
+#site1 .numA>ul{width: 95%; height: 26px; margin:0 auto; margin-top: 20px;}
+#site1 .numA>ul>li{display: inline-block; width: 48%; height: 26px; border: 1px solid  #fff; box-sizing: border-box;}
+#site1 .numA>ul>li:nth-of-type(1){float:left;}
+#site1 .numA>ul>li:nth-of-type(2){float:right;}
+#site1 .numA>ul>li>a{color: #fff; display: block; width: 100%; height: 26px;  line-height:26px; text-align: center; font-size:13px; font-weight:bold; transition:all 0.5s;}
+#site1 .numA>ul>li>a:hover{color: #40487c; background-color: #fff;}
+    
 /* 
 ====================================================================
     site2
@@ -158,9 +162,15 @@
 #site2 .num{width: 100%; height: 213px; padding-top: 60px;}
 #site2 .numA{height: 213px; margin-top: 0;}
 #site2 .numA>p{color: #40487c;}
-#site2 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}
-#site2 .numA>a{color: #40487c; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; margin: 20px auto 0 auto; font-weight:bold; border: 1px solid  #40487c; box-sizing: border-box; transition:all 0.5s;}
-#site2 .numA>a:hover{color: #fff; background-color: #40487c;}
+#site2 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 16px notokr-light;  line-height: 18px;}
+    
+#site2 .numA>ul{width: 95%; height: 26px; margin:0 auto; margin-top: 20px;}
+#site2 .numA>ul>li{display: inline-block; width: 48%; height: 26px; border: 1px solid  #40487c; box-sizing: border-box;}
+#site2 .numA>ul>li:nth-of-type(1){float:left;}
+#site2 .numA>ul>li:nth-of-type(2){float:right;}
+#site2 .numA>ul>li>a{color: #40487c; display: block; width: 100%; height: 26px;  line-height:26px; text-align: center; font-size:13px; font-weight:bold; transition:all 0.5s;}
+#site2 .numA>ul>li>a:hover{color: #fff; background-color: #40487c;}    
+    
 
 /* 
 ====================================================================
@@ -168,6 +178,7 @@
 ====================================================================
 */
 
+/*
 #work {height: 936px; background-color: #40487c;}
 #work .num{height: 151px;}
 #work .numA{height:151px; margin-top: 0;}
@@ -181,6 +192,7 @@
 .workList>ul a:hover span{opacity: 0.7}
 .workList>ul img{width: 100%; height: auto;}
 .workList>ul span{width: 100%; height: 100%; background-color: #000;  position: absolute; left: 0; top:0; text-align: center; opacity:0;  transition:all 0.4s; color: #fff; font:800 30px notokr-light; line-height:191.6666px; }
+*/
 
 /* 
 ====================================================================
@@ -188,16 +200,16 @@
 ====================================================================
 */
 
-#contact {height: 936px; background-color: #f0f0f0;}
-#contact>.num{height: 151px;}
+#contact {height: 766px; background-color: #f0f0f0;}
+#contact>.num{height: 131px;}
 #contact>.numA{height:151px; margin-top: 0;}
 
-.contact {width: 100%; height: 625px; padding: 10px; box-sizing: border-box;}
+.contact {width: 100%; height: 575px; padding: 10px; box-sizing: border-box;}
 
-.contactBox{width: 100%; margin: 60px auto 0;}
+.contactBox{width: 100%; margin:auto 0;}
 
 .contact h3{display:none;}
-.contact .text{width: 100%; margin: 20px 0 80px; font-size: 14px; color: #636363; text-align: center;} 
+.contact .text{width: 100%; margin: 20px 0 30px; font-size: 14px; color: #636363; text-align: center;} 
 .contact form{width: 100%;}
 .contact label{display:none;}
 .contact li{width:100%; margin-top:20px;}
