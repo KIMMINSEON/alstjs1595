@@ -1,0 +1,76 @@
+/* style.css index.html*/
+
+/* -----------------------------------------------------
+ aside 부분
+-----------------------------------------------------*/
+
+#banner {
+    width:100%; height:680px; margin-bottom:15px; padding-top: 50px;
+ margin: 0 auto;}
+.slide {overflow: hidden; width: 100%; height: 665px; box-sizing: border-box; position: relative;}
+.slide > .btn {position: absolute; width: 80px; height: 100%; top: 0; z-index: 400; transition: all 0.5s;}
+.slide > .btn.left_btn {left: 0;}
+.slide > .btn.right_btn {right: 0;}
+.slide > .btn button {width: 100%; height: 100%; background-color: transparent;}
+.slide > .btn span { width: 0; height: 0; display: block; overflow: hidden;}
+.slide > .banner_box {width: 300%; height: 100%; margin-left: -100%; /*overflow: hidden;*/}
+.slide > .banner_box > li {width: calc(100% / 3); height: 100%; float: left; line-height: 800px; text-align: center; color: #fff; font-size: 3rem; font-weight: bold; }
+.slide > .banner_box > .banner_01 {background-color: #000; background-image: url('../../img/ban01.png'); background-position: center,center; background-repeat:no-repeat;}
+.slide > .banner_box > .banner_02 {background-color: #eee; background-image: url('../../img/ban02.png'); background-position: center,center; background-repeat:no-repeat;}
+.slide > .banner_box > .banner_03 {background-color: #000;background-image: url('../../img/ban03.png'); background-position: center,center; background-repeat:no-repeat;}
+.slide > .banner_box > li>a{width: 100%; height: 100%; display: block;}
+
+
+/* -----------------------------------------------------
+ main 부분
+-----------------------------------------------------*/
+
+main{width: 960px; height: 920px; margin: 0 auto 70px;}
+
+/* ---------------------- #line01 ---------------------- */
+
+#line01,#line03{width: 100%; height: 270px;}
+#line01>div,#line03>div{width: 310px; height: 100%; background-color: #fff; float:left; border:1px solid #ddd; box-sizing: border-box; margin-right:15px; background-repeat:no-repeat; background-position:right bottom; }
+#line01>div>a{width: 100%; height: 100%; display: block; padding:25px; box-sizing:border-box;}
+#line01>div:nth-of-type(1){background-image: url(../../img/afs.png);}
+#line01>div:nth-of-type(2){background-image: url(../../img/cool.png);}
+#line01>div:nth-of-type(3){background-image: url(../../img/nik.png); margin-right: 0;}
+#line01>div>a>dl{width: 100%; height: 70px;}
+#line01>div>a>dl>dt{width: 100%; font-size: 16px; font-weight:bold; font-family: NanumBarunGothicOTFBold; margin-bottom: 16px; color:#333;}
+#line01>div>a>dl>dd{width: 100%; font-size: 14px; color:#333333;}
+
+/* ---------------------- #line02 ---------------------- */
+
+#line02{width: 100%; height: 350px; margin-top: 15px; margin-bottom: 15px;}
+#line02_box01{width: 475px; height: 100%; float: left;}
+#line02_box02{width: 475px; height: 100%; float: right;}
+#line02>div>a{display: block; width: 100%; height: 100%;}
+.snap_box {width: 100%; height: 170px; margin-bottom: 10px; float: right;}
+.support_box {width: 151px; height: 170px; margin-right: 11px; float: left;}
+.eshop_box {width: 151px; height: 170px; margin-right: 11px; float: left;}
+.image_box {width: 151px; height: 170px; float: left;}
+
+/* ---------------------- #line03 ---------------------- */
+
+#line03>div{padding:25px;}
+#line03>.line03_03{padding:0;}
+#line03>div:nth-of-type(3){ margin-right: 0;}
+.line03_01>h2,.line03_02>h2,.line03_01>a>h2{width: 100%; height: 24px; font-size:24px; margin-bottom: 11px;}
+#line03>.line03_01>a{width: 100%; height: 100%; display: block; padding:25px; box-sizing: border-box;}
+.line03_01>div:nth-of-type(1){width: 26px; height: 4px; margin-bottom: 18px;}
+.line03_01>ul{width: 100%; height: 120px;}
+.line03_01>ul>li{width: 100%; height:24px;}
+.line03_01>ul>li>a{width: 100%; height:100%; font-size: 12px; line-height: 24px;}
+.line03_01>div:nth-of-type(2){width: 260px; height: 152px; margin-top: 12px;}
+
+
+
+
+
+
+
+
+
+
+
+

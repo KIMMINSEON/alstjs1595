@@ -1,0 +1,71 @@
+/* style.css index.html*/
+
+/* -----------------------------------------------------
+ aside 부분
+-----------------------------------------------------*/
+
+#banner{
+    width:960px; height:450px; background-color:#ddd; margin: 0 auto 60px;  padding-top: 50px;
+}
+
+/* -----------------------------------------------------
+ main 부분
+-----------------------------------------------------*/
+
+main{width: 960px; height: 1865px; margin: 0 auto 70px;}
+
+/* ---------------------- #title ---------------------- */
+
+#title{width: 210px; height: 70px; margin: 0 auto;}
+#title>h2{width: 100%; height: 50px; font-size: 40px; text-align:center; line-height:50px; color: #333;}
+#title>p{width: 100%; height: 20px; font-size: 12px;  text-align:center; line-height:20px; color: #aaaaaa;}
+
+#list {width: 100%; height: 40px;}
+#list>ul{width: 160px; height: 100%; float: right;}
+#list>ul>li{float: left; height: 100%;}
+#list>ul>li:nth-of-type(1){width:12px;}
+#list>ul>li:nth-of-type(2),#list>ul>li:nth-of-type(4){width:px; height: 100%; padding: 0 9px;}
+#list>ul>li,#list>ul>li>a,#list>ul>li>a>i{font-size: 12px; color: #aaaaaa; text-align: center; line-height:40px;}
+
+/* ---------------------- .tab_menu ---------------------- */
+.tab_wrap {height: auto;}
+
+.tab_menu{width:960px; height: auto; float:left;}    
+.tab_menu {position:relative; width:960px;   float:left;}
+.tab_menu>li>a { display:block; position:absolute; width:160px; height: 40px;  text-align:center;  background:#ffffff;  color:#333; border:1px solid #ddd; border-bottom:2px solid #333;  border-right:0; font-weight:bold; box-sizing:border-box; line-height: 38px;}
+.tab_menu>li.on>a {background:#333; color:#fff;}
+.tab_menu>li:first-child>a {left:0;}
+.tab_menu>li:nth-of-type(2)>a {left:160px;}
+.tab_menu>li:nth-of-type(3)>a {left:320px;}
+.tab_menu>li:nth-of-type(4)>a {left:480px;}
+.tab_menu>li:nth-of-type(5)>a {left:640px;}
+.tab_menu>li:nth-of-type(6)>a {left:800px; border-right:1px solid #ddd;}
+.tab_menu>li>div {height:0; overflow:hidden; position:absolute;}
+.tab_menu>li.on>div {float:left; width: 960px; height:auto; box-sizing:border-box; top:90px; background-color: #fff;}
+
+
+/* ---------------------- #list ---------------------- */
+
+.product_list01 {width: 100%; height: 1140px;}
+.product_list02 {width: 100%; height: 1125px;}
+.product_list03 {width: 100%; height: 1125px;}
+.product_list04 {width: 100%; height: 1125px;}
+.product_list05 {width: 100%; height: 1125px;}
+.product_list06 {width: 100%; height: 1125px;}
+
+.product_list>li{width: 310px; height: 270px; margin-right: 15px; margin-bottom: 15px; float: left; background-color: #fff; border: 1px solid  #ddd; box-sizing: border-box;}
+.product_list>li:nth-of-type(3n){margin-right: 0;}
+.product_list>li>a{display: block; width: 100%; height: 100%; position: relative;}
+.product_list>li>a>img{width: 100%; height: 100%;}
+.product_list>li>a>div{position: absolute; width: 100%; height:0; background-color: rgba(0,0,0, 0.6); overflow: hidden; left: 0; top:270px;  transition: all 0.3s;}
+.product_list>li>a:hover>div{height:270px; top: 0;  opacity:1;}
+
+.text_box {width: 100%; height: 84px; margin: 100px auto 0;}
+.text_box>dt,.text_box>dd{color: #ffffff; text-align: center;}
+.text_box>dt{font-size: 60px; font-weight: 600; color: #ffffff; text-align: center; height: 60px; line-height: 60px; margin-bottom: 10px;}
+.text_box>dd{font-size: 16px; color: #ddd; height: 16px; line-height: 16px;}
+
+
+
+
+

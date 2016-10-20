@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" href="favicon.png" />
+        <!-- reset.css 불러오기 -->
+        <link rel="stylesheet" href="css/lib/normalize.css" />
+        <!-- Design css 불러오기 -->
+        <link rel="stylesheet" href="./font-awesome-4.6.1/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/event/wrap.css" />
+        <link rel="stylesheet" href="css/event/style.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <!-- 폰트 불러오기 -->
+        <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+        <!--[if lte IE 9]>
+        <script src="./js/dist/html5shiv.min.js"></script>
+        <script src="./js/dist/ie9.min.js"></script>
+        <script src="./js/dist/PIE.js"></script>
+        <script src="./js/dist/respond.min.js"></script>
+        <![endif]-->
+        <script src="js/jquery/jquery-1.12.2.min.js"></script>
+        <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery/jquery-ui.min.js"></script>
+        <title>Nikon Korea</title>
+        <style></style>
+        <script>
+            $(function(){
+                // header 메뉴
+                
+                $(".sub").hide();
+                $("nav>ul>li").hover(function(){
+                    $(".sub",this).slideDown("fast");},function(){
+                    $(".sub",this).slideUp("fast");
+                });
+                
+                // tab 메뉴
+
+                $( ".tab_menu>li>a" ).click(function() {
+                        $(this).parent().addClass("on").siblings().removeClass("on");
+                        return false;
+                    });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <div id="header_box">
+                    <h1><a href="index.html"><span>니콘로고</span></a></h1>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="product.html">Product</a>
+                                <ul class="sub">
+                                    <li><a href="product.html">SLR 카메라</a></li>
+                                    <li><a href="product.html">콤팩트 카메라</a></li>
+                                    <li><a href="product.html">미러리스 카메라</a></li>
+                                    <li><a href="product.html">스피드라이트</a></li>
+                                    <li><a href="product.html">렌즈</a></li>
+                                    <li><a href="product.html">악세서리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="event.html">Event</a>
+                                <ul class="sub">
+                                    <li><a href="event.html">진행 중인 이벤트</a></li>
+                                    <li><a href="event.html">종료 이벤트</a></li>
+                                    <li><a href="event.html">당첨자 발표</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">NPS</a>
+                                <ul class="sub">
+                                    <li><a href="#">개요&amp;이벤트서포트</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">MY NPS</a></li>
+                                    <li><a href="#">장비 대여신청</a></li>
+                                    <li><a href="#">NPS Q&amp;I</a></li>
+                                    <li><a href="#">신규회원신청</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">EShop</a>
+                                <ul class="sub">
+                                    <li><a href="#">E Shop메인</a></li>
+                                    <li><a href="#">아울렛</a></li>
+                                    <li><a href="#">타임세일</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                                <ul class="sub">
+                                    <li><a href="#">고객지원</a></li>
+                                    <li><a href="#">정품등록</a></li>
+                                    <li><a href="#">A/S안내</a></li>
+                                    <li><a href="#">제품 활용정보</a></li>
+                                    <li><a href="#">다운로드</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Nikon Korea</a>
+                                <ul class="sub">
+                                    <li><a href="#">니콘 소개</a></li>
+                                    <li><a href="#">CEO 인사말</a></li>
+                                    <li><a href="#">경영이념</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!-- ------------------//header------------------ -->
+            <main>
+                <aside id="banner">
+                    <a>
+                        <img src="img/evnet/banner.png" alt="온라인 단독 특가 니콘 카메라 세일 이벤트 배너">
+                    </a>
+                </aside>
+                <!-- ------------------//#banner------------------ -->
+                <div id="title">
+                    <h2>진행중인 이벤트</h2>
+                    <p>Event</p>
+                </div>
+                <!-- ------------------//#titler------------------ -->
+                <div id="list">
+                    <ul>
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                        <li>&gt;</li>
+                        <li><a href="product.html">event</a></li>
+                        <li>&gt;</li>
+                        <li><a href="product.html">진행중인 이벤트</a></li>
+                    </ul>
+                </div>
+                <!-- ------------------//#list------------------ -->
+                <div class="tab_wrap">
+                  <ul class="tab_menu">
+                    <li class="on">
+                      <a href="#">진행중인 이벤트</a>
+                      <div> 
+                          <ul class="product_list product_list01">
+                            <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>                   
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>
+                            </li>
+                          </ul>
+                      </div>
+                    </li>
+                    <!-- ------------------//list01------------------ -->
+                    <li>
+                      <a href="#">종료 이벤트</a>
+                      <div>
+                         <ul class="product_list product_list02">
+                            <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>                   
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>
+                            </li>
+                         </ul> 
+                      </div>
+                    </li>
+                    <!-- ------------------//list02------------------ -->
+                    <li>
+                      <a href="#">당첨자 발표</a>
+                      <div>
+                         <ul class="product_list product_list03">
+                           <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>                   
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/event/event01.png" alt="이벤트 배너1">
+                                </a>
+                                <span>진행중</span>
+                                <h2>
+                                    <a href="#">마이크로 사이트 오픈 기념 이벤트&#33;</a>
+                                </h2>             
+                                <p>2016.10.01 &#126; 2016.11.25</p>
+                            </li>
+                          </ul>
+                      </div>     
+                    </li>
+                    <!-- ------------------//list03------------------ -->
+                  </ul>
+                </div>
+                <!-- ------------------//.tab_wrap------------------ -->
+            </main>
+            <!-- ------------------//list------------------ -->
+            <footer>
+                <div id="nik_footer">
+                    <h2>니콘 웹 정보 및 로고</h2>
+                    <div id="add_box">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">청소년보호정책</a></li>
+                            <li><a href="#">제품</a></li>
+                        </ul>
+                        <address>
+                            <p>상호명 : 주식회사 니콘이미징코리아 / 대표이사 : 키타바타 히데유키 / TEL : 080-800-6600 / FAX : 02-2026-0029</p>
+                            <p>주소 : 서울특별시 중구 세종대로 39 대한상공회의소 12층 (중구 남대문로 4-45) (04513)</p>
+                            <p>사업자등록번호 : 104-81-98839 / 통신판매업신고 : 중구 제05801호 / 콜센터 운영시간 : 평일 09:00 ~ 18:00 (토·일·공휴일 휴무)</p>
+                        </address>
+                    </div>
+                    <div id="famList">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend class="hidden">Family Site list</legend>
+                                <label for="familySite" class="hidden">Family Site</label>
+                                <select name="familySite" id="familySite">
+                                    <option value="0">Nikon Family Site</option>
+                                    <option value="http://www.nikon.com/products/precision/index.htm">Precision Equiqment &#58; 정밀 기기</option>
+                                    <option value="http://www.nikon-inst.co.kr/new/main/main.php">Microscope Solutions &#58; 현미경 솔루션</option>
+                                    <option value="http://www.nikon-inst.co.kr/new/main/main.php">Industrial Metrology &#58; 산업 계측기</option>
+                                </select>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- ----------------//#famList---------------- -->
+                </div>
+                <!-- ----------------//#famList---------------- -->
+            </footer>
+            <!-- ------------------//#nik_footer------------------ -->
+        </div>
+        <!-- ------------------//#wrap------------------ -->
+    </body> 
+</html>
