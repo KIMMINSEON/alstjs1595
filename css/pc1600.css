@@ -36,8 +36,8 @@ section{width: 100%; height: 984px; background-size: cover;}
 #home {background: url(../img/main_img.png);; background-size: cover;  background-position: right center; background-attachment:fixed; overflow: hidden; background-repeat: no-repeat; position:relative;}
 #home>dl{width: 302px; height: 296px;  position: absolute; top:50%; left: 50%; margin-top:-148px; margin-left: -151px;}
 #home>dl>dd:nth-of-type(1)>img{margin-left: auto; margin-right: auto; display: block;}
-#home>dl>dd:nth-of-type(2){width: 100%; height: 18px; line-height:18px; font: 100 16px notokr-thin; color: rgba(254, 255, 255, 0.53); text-align: center; margin-top: 42px;}
-#home>dl>dd:nth-of-type(3),#home>dl>dd:nth-of-type(3)>span{width: 100%; height: 22px; line-height: 10px; font: 100 22px notokr-thin; color: #fff;  text-align: center;  margin-top: 28px; letter-spacing:28px;}
+#home>dl>dd:nth-of-type(2){width: 100%; height: 18px; line-height:18px; font-weight:100; font-size: 16px; color: rgba(254, 255, 255, 0.53); text-align: center; margin-top: 42px;}
+#home>dl>dd:nth-of-type(3),#home>dl>dd:nth-of-type(3)>span{width: 100%; height: 22px; line-height: 22px; font-weight:100; font-size: 22px; color: #fff;  text-align: center;  margin-top: 28px; letter-spacing:28px;}
 #home>dl>dd:nth-of-type(3)>span{letter-spacing: 0;}
 
 
@@ -50,7 +50,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 .num{width: 20%; height: 100%; float: left;}
 .numA{width: 100%; height: 466px; margin-top: 45px;}
 .numA>img,.num hr{margin-left: auto; margin-right: auto; display: block;}
-.numA>p{margin-top: 24px; text-align: center; height: 31px; font: 300 40px notokr-light; color: #40487c; line-height: 31px;}
+.numA>p{margin-top: 24px; height: 45px; text-align: center; font-weight:300; font-size: 45px; color: #40487c; line-height: 45px;}
 .numA>img:nth-of-type(2){margin-top: 81px;}
 
 /*선*/
@@ -82,12 +82,12 @@ section{width: 100%; height: 984px; background-size: cover;}
     .wo_box{height:132px;}
     .aw_box{height:150px;}
 .tit{width: 100%; height: 67px;}
-.tit>div{width: 100%; height: 16px; margin-top: 14px;}
+.tit>div{width: 100%; height: 18px; margin-top: 14px;}
 .tit img{margin-left: auto; margin-right: auto; display: block;}
     .tit hr{width: 25%; margin-top: 7.5px; color: #40487c;}
     .tit hr:nth-of-type(1){float: left;}
     .tit hr:nth-of-type(2){float: right;}
-    .tit h2{width: 50%; height: 16px; font: 800 16px notokr-light; display: block; float:left; line-height: 16px; text-align: center;}
+    .tit h2{display: block; float:left; width: 50%; height: 18px; font-weight:500; font-size: 16px; line-height: 18px; text-align: center;}
 
 #t2>div{width: 100%; margin-bottom:92px;}
 /*#t1 li,#t2 li{list-style-image:url(../img/list.png);}*/
@@ -104,32 +104,32 @@ section{width: 100%; height: 984px; background-size: cover;}
 .icon2 {background-image: url(../img/icon2.png);}
 .icon3 {background-image: url(../img/icon3.png);}
 .icon4 {background-image: url(../img/icon4.png);}
-.ab_box .text ul>li>p{height: 19px; float: left; font: 300 14px notokr-light; line-height:19px; color: #444444;}
+.ab_box .text ul>li>p{height: 19px; float: left; font-weight:300; font-size: 14px; line-height:19px; color: #333;}
 
 /* ********* about education 꾸미기 ****************** */
 
 .ed_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
 .ed_box ul>li:nth-of-type(1){ margin-top: 0;}
-.ed_box ul>li>p{width:150px;float:left; font: 300 14px notokr-light;  height: 19px;}
-.ed_box ul>li>span{float:left; width:calc(100% - 150px); height: 19px; font: 300 14px notokr-light; line-height:19px;}
+.ed_box ul>li>p{width:150px;float:left; height: 19px; font-weight:300; font-size: 14px; line-height:19px;}
+.ed_box ul>li>span{float:left; width:calc(100% - 150px); height: 19px; font-weight:300; font-size: 14px; line-height:19px;}
 
 /* ********* about work 꾸미기 ****************** */
 
 .wo_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
-.wo_box ul>li>p{width:25%;float:left; font: 300 14px notokr-light;  height: 19px;}
-.wo_box ul>li>span{float:left; /*width:calc(100% - 25%);*/ height: 19px; font: 300 14px notokr-light; line-height:19px;}
+.wo_box ul>li>p{width:25%; float:left; font-weight:300; font-size: 14px; height: 19px; line-height:19px;}
+.wo_box ul>li>span{float:left; /*width:calc(100% - 25%);*/ height: 19px; font-weight:300; font-size: 14px; line-height:19px;}
 
 /* ********* about 상장,자격증 꾸미기 ****************** */
 
 .aw_box ul>li,.li_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
-.aw_box ul>li>p,.li_box ul>li>p{width:15%;float:left; font: 300 14px notokr-light;  height: 19px;}
-.aw_box ul>li>span,.li_box ul>li>span{width: 20%; float:left; height: 19px; font: 300 14px notokr-light; line-height:19px; margin-left: 7%;}
+.aw_box ul>li>p,.li_box ul>li>p{width:15%; height: 19px; float:left; font-weight:300; font-size: 14px; line-height:19px;}
+.aw_box ul>li>span,.li_box ul>li>span{width: 20%; float:left; height: 19px; font-weight:300; font-size: 14px; line-height:19px; margin-left: 7%;}
 .aw_box ul>li>span:last-child,.li_box ul>li>span:last-child{width: 40%; float:right; margin-right: 4%;}
 
 /* ********* about work 꾸미기 ****************** */
 
 .so_box ul>li{width: 100%; margin-top: 19px; height: 19px;}
-.so_box ul>li>p{width:25%;float:left; font: 300 14px notokr-light;  height: 19px;}
+.so_box ul>li>p{width:25%;float:left; height: 19px; font-weight:300; font-size: 14px; line-height:19px;}
 .so_box ul>li>img{float:right; /*width:calc(100% - 25%);*/}
 
 
@@ -155,7 +155,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 /* ********* site1_num ****************** */
     
 #site1 .numA>p{color: #fff;}
-#site1 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}  
+#site1 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font-weight:300; font-size: 18px;  line-height: 18px;}  
 #site1 .numA>ul{width: 140px; height: 126px; margin:0 auto;}
 #site1 .numA>ul>li{display: block; width: 140px; height: 28px; margin-top: 35px; border: 1px solid  #fff; box-sizing: border-box;}
 #site1 .numA>ul>li>a{color: #fff; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; font-weight:bold; transition:all 0.5s;}
@@ -178,7 +178,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 */
 
 #site2 .numA>p{color: #40487c;}
-#site2 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}  
+#site2 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font-weight:300; font-size: 18px;  line-height: 18px;}  
 #site2 .numA>ul{width: 140px; height: 126px; margin:0 auto;}
 #site2 .numA>ul>li{display: block; width: 140px; height: 28px; margin-top: 35px; border: 1px solid  #40487c; box-sizing: border-box;}
 #site2 .numA>ul>li>a{color: #40487c; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; font-weight:bold; transition:all 0.5s;}
@@ -196,7 +196,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 /* ********* site1_num ****************** */
     
 #site3 .numA>p{color: #fff;}
-#site3 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font: 300 18px notokr-light;  line-height: 18px;}  
+#site3 .numA>p:nth-of-type(2){margin-top: 21px; height: 18px; font-weight:300; font-size: 18px;  line-height: 18px;}  
 #site3 .numA>ul{width: 140px; height: 126px; margin:0 auto;}
 #site3 .numA>ul>li{display: block; width: 140px; height: 28px; margin-top: 35px; border: 1px solid  #fff; box-sizing: border-box;}
 #site3 .numA>ul>li>a{color: #fff; display: block; width: 140px; height: 28px;  line-height:28px; text-align: center; font-weight:bold; transition:all 0.5s;}
@@ -236,7 +236,7 @@ section{width: 100%; height: 984px; background-size: cover;}
 
 .contactBox{width: 600px; margin: 158px auto 0;}
 
-.contact h3{width: 100%; height: 37px; text-align: center; line-height: 37px; font-size:42px; margin: 0 auto; font-weight: 300; font-family:notoLight; color: #40487c;}
+.contact h3{width: 100%; height: 50px; text-align: center; line-height: 50px; font-size:42px; margin: 0 auto; font-weight: 300; color: #40487c;}
 .contact .text{width: 100%; margin: 34px 0 80px; font-size: 14px; color: #636363; text-align: center;} 
 .contact form{width: 100%;}
 .contact label{display:none;}
