@@ -36,8 +36,8 @@ main{width: 960px; height: 920px; margin: 0 auto 70px;}
 #line01>div:nth-of-type(2){background-image: url(../../img/cool.png);}
 #line01>div:nth-of-type(3){background-image: url(../../img/nik.png); margin-right: 0;}
 #line01>div>a>dl{width: 100%; height: 70px;}
-#line01>div>a>dl>dt{width: 100%; font-size: 16px; font-weight:bold; font-family: NanumBarunGothicOTFBold; margin-bottom: 16px; color:#333;}
-#line01>div>a>dl>dd{width: 100%; font-size: 14px; color:#333333;}
+#line01>div>a>dl>dt{width: 100%; font-size: 16px; font-weight:bold; margin-bottom: 16px; color:#333;}
+#line01>div>a>dl>dd{width: 100%; font-size: 14px; color:#777;}
 
 /* ---------------------- #line02 ---------------------- */
 
@@ -55,7 +55,7 @@ main{width: 960px; height: 920px; margin: 0 auto 70px;}
 #line03>div{padding:25px;}
 #line03>.line03_03{padding:0;}
 #line03>div:nth-of-type(3){ margin-right: 0;}
-.line03_01>h2,.line03_02>h2,.line03_01>a>h2{width: 100%; height: 24px; font-size:24px; margin-bottom: 11px;}
+.line03_01>h2,.line03_02>h2,.line03_01>a>h2{width: 100%; height: 28px; font-size:24px; line-height:28px; margin-bottom: 11px;}
 #line03>.line03_01>a{width: 100%; height: 100%; display: block; padding:25px; box-sizing: border-box;}
 .line03_01>div:nth-of-type(1){width: 26px; height: 4px; margin-bottom: 18px;}
 .line03_01>ul{width: 100%; height: 120px;}
